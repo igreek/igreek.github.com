@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>python的内置数据类型 | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="python的内置数据类型"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-11-13T15:23:00.000Z"><a href="/2014/11/13/python的内置数据类型/">2014-11-13</a></time>
+      
+      
+  
+    <h1 class="title">python的内置数据类型</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>python的内置数据类型和其他语言类似也有相同点，也有不同点，如整型(int),布尔类型 ，列表(list) ，字符串型(str)，元组(tuple)和字典(dict)，下面分析各数据类型的使用。<br><a id="more"></a></p>
+<h3 id="一、基本的数据类型"><a href="#一、基本的数据类型" class="headerlink" title="一、基本的数据类型"></a><strong>一、基本的数据类型</strong></h3><p>整型(int) 如123<br>布尔类型  布尔类型用于逻辑判断，有True和False两种结果<br>字符串型(str)  用””或’’表示。如”helloworld” ‘student’<br>列表(list) 用[]表示，如[‘A’,’B’,’C’]<br>元组(tuple) 用()表示 如(1，3，4)<br>字典(dict) 用{键值对} 表示  如:{name:’zhangsan’,age:20}<br>以上数据类型:<br>可变的数据类型:列表(list),字典(dict)<br>不可变的数据类型:整型(int),字符串(str),元组(tuple)</p>
+<h3 id="二、常用类型的一些操作"><a href="#二、常用类型的一些操作" class="headerlink" title="二、常用类型的一些操作"></a><strong>二、常用类型的一些操作</strong></h3><h3 id="1-字符串类型"><a href="#1-字符串类型" class="headerlink" title="(1)字符串类型"></a><strong>(1)字符串类型</strong></h3><p>字符串类型是由连续的单个字符组成，可以表示文本.是不可变类型，若需要修改，则只能重新创建一个字符串<br><strong>1.字符串的创建</strong><br> s1=’helloworld’或”helloworld”</p>
+<p> str()方法<br> a=123<br> print str(a) 则输出”123”<br><strong>2.字符串的查找</strong><br>  主要有正向和反向查找，用下标或索引方式<br>  正向查找(用下标0开始)<br>  a=’123’ 则a[0]为’1’<br>  反向查找(从下标-1开始)<br>  a=’12bc’ 则a[-1]为’c’</p>
+<p> 还有a[0:]表示从下标0开始到结尾的所有字符。其他类似</p>
+<p> <strong>3.字符串的修改和删除</strong><br> 字符串和数字一样都是不可变数据类型，不能进行修改操作。要想修改或是删除原有字符串数据，重新创建一个字符串。<br> <strong>4.字符串和操作符</strong><br>A.序列操作符切片（[]和[:]）<br>B.成员操作符<br>C.连接操作符<br>e.普通串转换为unicode串</p>
+<p>只适用于字符串的操作符<br>1.格式化操作符(%)<br>2.字符串模板<br>3.原始操作符<br>5.内建函数<br>cmp()<br>len()<br>zip()<br>enumerate<br>字符串类型函数<br>raw_input<br>str()and unicdoe()<br>chr() and ord()</p>
+<h4 id="2-序列"><a href="#2-序列" class="headerlink" title="(2).序列"></a><strong>(2).序列</strong></h4><p>由不同类型共同组成的一个整体<br>序列的每一个元素可以通过指定一个偏移量的方式访问<br>1.标准类型操作符<br>2.序列类型操作符<br>a.成员关系  (in or not in)<br>b.连接操作符(+)<br>c.重复操作符(*)<br>d.切片操作符([],[:],[::])<br>e.用步长索引进行扩展的切片操作<br>f.切片索引更多内容<br>3.内建函数<br>a.内型转化<br>  如:list(iter),str[obj],tuple(iter)</p>
+<p>b.浅拷贝和深拷贝</p>
+<h4 id="3-列表"><a href="#3-列表" class="headerlink" title="(3).列表"></a><strong>(3).列表</strong></h4><p>列表是一个容器，能保存任何类型元素<br><strong>1.创建列表类型的数据和赋值</strong><br>用[]括起来<br><strong>2.访问列表中的值</strong><br>aList[0]</p>
+<p><strong>3.列表的更新</strong><br>可以用append()追加元素；也可以用索引更新一个或几个元素</p>
+<p><strong>4.列表元素的删除</strong><br>del：删除确切要删除的元素  如:l=[‘a’,’b’,1] del l[2] 则会将1删掉<br>remove():部分移除元素</p>
+<p><strong>5.操作符</strong><br>标准操作符<br>切片操作符[：]<br>成员关系（in not in）<br>连接操作符:列表类型的连接操作只能是相同类型之间进行<br>重复操作符(*)</p>
+<h4 id="4-元组"><a href="#4-元组" class="headerlink" title="(4).元组"></a><strong>(4).元组</strong></h4><p>   元组是一个有序的集合，支持一般序列的操作；如（1,2）+（2,3） 得到（1,2,2,3）<br><strong>1.元组的创建</strong><br>用()包括，()中的元素用逗号进行分割如:(‘A’,’B’,’C’)<br> 也可以不用()包起来，如 &gt;&gt;&gt; 4，5,6<br> 若只有一个元素,则该元素后需要加逗号,如’A’<br>tuple()函数创建，括号内的元素可以是列表，字符串等如tuple([1,2,3])；tuple(‘hello’)<br>   <strong>2.访问元组</strong><br>     可用下标和切片的方式；如y=(‘A’,’B’,’C’) 则y[0:1]为(‘A’,’B’)</p>
+<p>   <strong>3.更新元组</strong><br>     元组是不可变类型，不在再本身的基础上修改，可以转换为列表进行修改<br>     如 a=(1,2,3) b=list(a) b=[1,2,3] b[0]=2  则a=tuple(b) 得到（2，2,3）<br>     若元组中包含了可变的数据类型，则可修改<br>   <strong>4.移除元组</strong></p>
+<p>   <strong>5.元组的操作符和内建函数</strong><br>   a.创建，重复和连接操作<br>   b.成员关系和切片操作<br>   c.内建函数（str(),min(),list()）<br>   d.操作符</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/python开发/">python开发</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/python/">python</a>, <a href="/tags/内置数据类型/">内置数据类型</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2014/12/26/python网络编程之TCP实现/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2014/10/30/python+mysqldb数据库环境搭建和入门/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

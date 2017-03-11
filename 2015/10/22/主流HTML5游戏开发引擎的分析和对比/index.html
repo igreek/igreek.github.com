@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>主流HTML5游戏开发引擎的分析和对比 | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="主流HTML5游戏开发引擎的分析和对比"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-10-22T07:47:17.000Z"><a href="/2015/10/22/主流HTML5游戏开发引擎的分析和对比/">2015-10-22</a></time>
+      
+      
+  
+    <h1 class="title">主流HTML5游戏开发引擎的分析和对比</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>HTML 5是近十年来Web开发标准最巨大的飞跃。和以前的版本不同，HTML 5并非仅仅用来表示Web内容，它的新使命是将Web带入一个成熟的应用平台，在HTML 5平台上，视频，音频，图象，动画，以及同电脑的交互都被标准化<br><a id="more"></a></p>
+<h2 id="一、引擎说明"><a href="#一、引擎说明" class="headerlink" title="一、引擎说明"></a>一、引擎说明</h2><p>本文主要选取了Construct2、ImactJS、LimeJS、GameMaker、CreateJS、lycheeJS、Crafty、three.js、melonJS、Turbulenz、Quintus、Cocos2d-html5等进行了简要介绍和对比，主要是根据网上的资料整理而成。<br>主流框架对比</p>
+<h3 id="Construct2"><a href="#Construct2" class="headerlink" title="Construct2"></a>Construct2</h3><p>Construct 2是一个运行于Windows平台的游戏制作工具，它可以让没有任何编程基础的用户在短时间内不写一行代码快速开发出一款可运行于所有平台（Windows、Mac、Linux、Android、iOS等）的游戏。免费版可以将游戏导出成HTML5。收费版本分为个人版（79英镑）和企业版（259英镑），可以导出所有平台的版本，同时提供了更多的特效和音乐。如果使用该工具盈利超过5000美元，需要升级到企业版。</p>
+<p>优点：</p>
+<ol>
+<li>简单易用，可实时运行游戏</li>
+<li>强大的事件系统，可以不通过写代码来控制游戏逻辑</li>
+<li>提供了可编程扩展的接口</li>
+<li>提供了大量特效，支持物理效果</li>
+<li>支持所有平台</li>
+<li>完整的文档以及社区支持</li>
+</ol>
+<p>缺点：<br>不如直接写代码灵活</p>
+<p>参考资料：</p>
+<ol>
+<li>官方网站</li>
+<li>Construct 2 vs. Javascript</li>
+</ol>
+<h3 id="ImpactJS"><a href="#ImpactJS" class="headerlink" title="ImpactJS"></a>ImpactJS</h3><p>ImpactJS是一个基于JavaScript的HTML5游戏引擎，同时支持PC和移动平台浏览器。它是目前除了Construct2之外最受欢迎的HTML5游戏引擎，使用需要支付99美元。</p>
+<p>优点：</p>
+<ol>
+<li>提供了灵活的关卡编辑器，可以快速构建游戏地图</li>
+<li>提供了强大的调试工具</li>
+<li>提供了Ejecta可以将JavaScript的执行结果通过OpenGL渲染出来，可以在iOS平台上获得与原生应用相近的效率</li>
+<li>文档齐全，有两本专门介绍ImpactJS开发的书</li>
+<li>支持物理效果</li>
+<li>支持自己编写插件来扩展</li>
+</ol>
+<p>App Store游戏</p>
+<ol>
+<li>Biolab Disaster</li>
+<li>Drop JS</li>
+</ol>
+<h3 id="LimeJS"><a href="#LimeJS" class="headerlink" title="LimeJS"></a>LimeJS</h3><p>LimeJS是一个基于Google Closure Library开发的HTML5游戏框架，继承了Closure代码易读易懂、架构清楚的特性。同时提供了游戏中各种通用实体的封装，如Director、Scene、Layer、Event和Animation等，与Cocos2d的API类似。它是由Digital Fruit公司创建。</p>
+<p>优点：</p>
+<ol>
+<li>基于Apache协议的开源框架</li>
+<li>功能强大，文档齐全，与ImactJS类似</li>
+<li>支持物理效果</li>
+<li>与Cocos2d的API类似，容易上手</li>
+</ol>
+<p>缺点：<br>依赖于Google Closure</p>
+<h3 id="GameMaker"><a href="#GameMaker" class="headerlink" title="GameMaker"></a>GameMaker</h3><p>GameMaker与Construct 2类似，都是一个游戏制作工具，可以导出到各个平台运行，分为免费版、标准版（49.99美元）、专业版（99.99美元）和大师版（799.99美元）。其中免费版只能导出Mac和Windows版本，导出HTML5需要大师版或者专业版（再额外支付99.99美元）。</p>
+<p>优点和缺点：<br>优势与Construct2类似，但性价比不如Construct2高</p>
+<h3 id="CreateJS-EaselJS"><a href="#CreateJS-EaselJS" class="headerlink" title="CreateJS(EaselJS)"></a>CreateJS(EaselJS)</h3><p>CreateJS是Adobe官方赞助的开源开发框架，它大部分API都是基于Flash原有的API来模仿实现的，并且官方提供了直接把Flash动画转成JS数据包的工具，调用起来很方便。CreateJS提供了若干开发套件及工具，分别是：EaselJS（负责图形、事件、触控、滤镜等功能）、TweenJS（补间动画）、SoundJS（音频控制）、PreloadJS（文件加载）和Zoë（生成图片精灵及动画数据）。</p>
+<p>优点：</p>
+<ol>
+<li>Flash开发者很容易上手</li>
+<li>提供了Flash转html5的工具，可以将部分Flash代码进行转换再修改</li>
+<li>基于MIT协议的开源框架</li>
+<li>类库设计非常独立，包含不同的模块，可选择性使用</li>
+</ol>
+<h3 id="lycheeJS"><a href="#lycheeJS" class="headerlink" title="lycheeJS"></a>lycheeJS</h3><p>lycheeJS是一个环境独立的JavaScript游戏引擎，可以在任何支持JavaScript的环境中运行。它的理念是做最快的JavaScript游戏引擎。</p>
+<p>优点：</p>
+<ol>
+<li>同时支持PC（Firefox、Chrome、Opera、Safari、IE）和移动平台（WebKit、Chrome、Firefox、Safari）的浏览器</li>
+<li>提供了CDN、WebSockets、SPDY、HTTP2.0以及游戏截图的支持</li>
+<li>提供了可以直接导出第三方（Facebook、AppStore、Google Play Store）资源包来发布</li>
+<li>基于MIT协议的开源框架</li>
+</ol>
+<h3 id="Crafty"><a href="#Crafty" class="headerlink" title="Crafty"></a>Crafty</h3><p>Crafty是一个体积小、简单、轻量级的2D的HTML5游戏引擎，它提供了通过Canvas或DOM来绘制实体，提供了精灵Map以及SAT高级碰撞监测支持。它是由个人（Louis Stowasser）创建，同时由Github上的一些开发者共同开发。</p>
+<p>优点</p>
+<ol>
+<li>体积小</li>
+<li>轻量级引擎，不会受到框架的太多束缚</li>
+<li>同时支持PC和移动平台浏览器</li>
+</ol>
+<h3 id="three-js"><a href="#three-js" class="headerlink" title="three.js"></a>three.js</h3><p>Three.js是一个轻量级的JavaScript库，用于在浏览器上创建和显示3D图形。它可以同时使用Canvas、SVG或WebGL进行绘制。</p>
+<p>优点和缺点：<br>支持3D，但是不适合做2D游戏</p>
+<h3 id="melonJS"><a href="#melonJS" class="headerlink" title="melonJS"></a>melonJS</h3><p>melonJS是melonJS团队对Javascript热情以及开发经验的结晶，是一个简单、免费、而且独立的类库。</p>
+<p>优点</p>
+<ol>
+<li>轻量级的2D引擎</li>
+<li>支持所有主流的PC和移动平台浏览器</li>
+<li>支持使用Tiled map editor来创建和编辑地图</li>
+<li>支持多声道音频</li>
+<li>基于MIT协议的开源框架</li>
+</ol>
+<h3 id="Turbulenz"><a href="#Turbulenz" class="headerlink" title="Turbulenz"></a>Turbulenz</h3><p>Turbulenz是一个开源的HTML5游戏引擎，提供了可以运行在Windows、MacOS、Linux上的SDK，允许开发人员创建高质量和硬件加速的2D、3D游戏。包括以下功能：异步资源加载、进行特效和粒子渲染、支持物理效果、碰撞检测以及动画、3D音效支持、支持网络交互以及社交网络分享、场景和资源的管理。</p>
+<p>优点：</p>
+<ol>
+<li>功能强大，同时支持2D和3D</li>
+<li>基于MIT协议的开源引擎</li>
+</ol>
+<h3 id="Quintus"><a href="#Quintus" class="headerlink" title="Quintus"></a>Quintus</h3><p>Quintus是一个容易上手、轻量级、且模块化的HTML5游戏引擎。它引用面向对象的思想来进行HTML5游戏开发，同时依赖于jQuery来提供事件处理机制和元素选取操作。</p>
+<p>缺点</p>
+<ol>
+<li>依赖于jQuery</li>
+<li>目前引擎仍处于初级阶段，还很不成熟</li>
+</ol>
+<h3 id="Cocos2d-html5"><a href="#Cocos2d-html5" class="headerlink" title="Cocos2d-html5"></a>Cocos2d-html5</h3><p>Cocos2d-html5是一款基于Cocos2d-x API的2D开源免费HTML5游戏引擎。它目前通过canvas进行渲染，将来会支持WebGL。它由国内Cocos2d-x核心团队主导开发和维护，行业领袖、HTML5大力推动者Google为这个项目提供支持。同时，Zynga、Google等大公司的工程师也参与到它的设计工作中。</p>
+<p>优点：</p>
+<ol>
+<li>与Cocos2d的API类似，容易上手</li>
+<li>中文文档齐全，资料丰富</li>
+<li>基于MIT协议的开源引擎</li>
+</ol>
+<h2 id="二、各框架具体参数对比"><a href="#二、各框架具体参数对比" class="headerlink" title="二、各框架具体参数对比"></a>二、各框架具体参数对比</h2><ol>
+<li>各HTML5游戏框架对比HTML5 Game Engines</li>
+<li>List of JS Game Engines</li>
+<li>对于Crafty、Lime、Frozen、Melon、Impact、Quintus框架，可以在Breakouts上查看用这些引擎开发同一个游戏的效果以及代码风格。Breakouts中使用到的特性包括碰撞检测、精灵动画、音效、地图、场景切换、交互、文字渲染、移动平台支持。</li>
+<li>以上各引擎中，除了Construct2、ImpactJS、GameMaker是收费的之外，其他引擎都是免费并且开源的。对于开源引擎，我们可以从Github上面的关注度了解到该引擎的流行程度，关注的人越多，遇到问题越容易解决。同时一般来说，项目开发者越多，版本更新越快；项目的进行时间越长则越成熟。下面将对各开源引擎的开发者人数、项目启动时间、关注度进行对比。<br>Game Engine    Github commits    Github contributors    Start time    Github Star    Github Fork<br>LimeJS    532    22    2011.1.19    1091    187<br>EaselJS    784    15    2011.1.23    2758    650<br>lycheeJS    4    1    2012.9.5    110    20<br>Crafty    1182    67    2010.11.5    993    225<br>three.js    6409    198    2010.3.23    12691    2816<br>melonJS    1287    15    2011.4.11    643    137<br>Turbulenz    736    12    2013.4.26（最近才开源）    1522    207<br>Quintus    118    11    2012.8.4    450    89<br>Cocos2d-html5    2706    39    2012.1.28    735    303</li>
+</ol>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>以上各引擎中，Construct2、ImpactJS、GameMaker三个是收费的，其中Construct2与GameMaker更像一个游戏开发工具，可以实现不用写一行代码来制作游戏，更适合于没有编程基础的人使用。而ImpactJS作为一个高质量的框架，且易于扩展，虽然是收费的，但是物有所值。</p>
+<p>开源引擎中，three.js是最火的，但是仅限于开发3D游戏。其次是CreateJS，由Adobe官方赞助且采用Flash类似的API以及模块化开发，是Flash开发者以及将Flash游戏转换成html5不可多得的选择。Turbulenz虽然开源时间比较晚，但颇有后来者居上的趋势，由于其对2D和3D的同时支持，是同时开发2D和3D游戏的最佳选择。LimeJS与Crafty相比的优势在于有一个公司进行维护，相比个人要更稳定，但是需要依赖于Google Closure，也使之成为一个重量级的框架。Crafty体积小、轻量级，更适合于小游戏的开发。Cocos2d-html5作为国产框架的一个优势在于中文文档和教程多，且得到了Google的支持，但相比ImpactJS、CreateJS仍不够成熟。melonJS、Quintus、lycheeJS的开发者和使用者都较少，相关文档和教程也相对少，还有待观察。</p>
+<p>参考资料</p>
+<ol>
+<li>JavaScript Game Engine Comparison</li>
+</ol>
+<p>转自:<a href="http://blog.csdn.net/zhaoxy_thu/article/details/11867123" target="_blank" rel="external">http://blog.csdn.net/zhaoxy_thu/article/details/11867123</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/HTML5开发/">HTML5开发</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/HTML5/">HTML5</a>, <a href="/tags/游戏引擎/">游戏引擎</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/10/25/Android之Intent分析/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/10/22/python基础详解/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

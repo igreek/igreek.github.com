@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android之Activity分析 | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Android之Activity分析"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-10-12T08:24:00.000Z"><a href="/2015/10/12/Android之Activity/">2015-10-12</a></time>
+      
+      
+  
+    <h1 class="title">Android之Activity分析</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity)<br><a id="more"></a><br><strong>一、什么是Activity</strong><br>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity).配置如下<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">activity</span></span></div><div class="line">   <span class="attr">android:label</span>=<span class="string">"@string/app_name"</span></div><div class="line">   <span class="attr">android:name</span>=<span class="string">".MainActivity"</span> &gt;</div><div class="line">	  <span class="tag">&lt;<span class="name">intent-filter</span> &gt;</span></div><div class="line">		  <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">"android.intent.action.MAIN"</span> /&gt;</span></div><div class="line">		  <span class="tag">&lt;<span class="name">category</span> <span class="attr">android:name</span>=<span class="string">"android.intent.category.LAUNCHER"</span> /&gt;</span></div><div class="line">	  <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></div><div class="line"> <span class="tag">&lt;/<span class="name">activity</span>&gt;</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>应用第一次运行时就会看到此Activity，并可以通过此Activity去启动其他的Activity.每当新的Activity启动时，当前的Activity就会停止，新的Activity就会压入到<br>stack(先进后出)中，并获得用户焦点，当回退时，当前的Activity就回销毁，上一个Activity就会恢复</p>
+<p><strong>二、activivty的什么周期</strong><br>流程图如下:<br>    <img src="http://img.blog.csdn.net/20151012162332940" alt="这里写图片描述"><br>涉及都的方法有onCreate()  onStart() onResume() onPause() onStop() onRestart() onDestory<br>Activity启动过程 onCreate()——&gt;onStart()——&gt;onResume()  退出Activity过程 onPause()——&gt;onStop()——&gt;onDestory()<br>按下home键回到主界面时执行过程:onPause()——&gt;onStop(),再次打开运行过程:onRestart()——&gt;onStart()——&gt;onResume()<br>以下是各个方法的说明:<br>onCreate()：当 activity 第一次创建时会被调用。在这个方法中你需要完成所有的正常静态设置 ，比如创建一个视图（ view ）、绑定列表的数据等等。<br>如果能捕获到 activity 状态的话，这个方法传递进来的 Bundle 对象将存放了 activity 当前的状态。调用该方法后一般会调用 onStart() 方法。</p>
+<p>onRestart()：在 activity 被停止后重新启动时会调用该方法。其后续会调用 onStart 方法。</p>
+<p>onStart()当 activity 对于用户可见前即调用这个方法。如果 activity回到前台则接着调用 onResume() ，如果 activity 隐藏则调用onStop()</p>
+<p>onResume()：在 activity 开始与用户交互前调用该方法。在这时该activity 处于 activity 栈的顶部，并且接受用户的输入。其后续会调用 onPause() 方法。</p>
+<p>onPause()：在系统准备开始恢复其它 activity 时会调用该方法。这个方法中通常用来提交一些还没保存的更改到持久数据 中，停止一些动画或其它一些耗 CPU 的操作等等。<br>无论在该方法里面进行任何操作，都需要较快速完成，因为如果它不返回的话，下一个 activity 将无法恢复出来。如果 activity 返回到前台将会调用 onResume() ，如果 activity 变得对用户不可见了将会调用onStop() 。</p>
+<p>onStop()：在 activity 对用户不可见时将调用该方法。可能会因为当前 activity 正在被销毁，或另一个 activity （已经存在的activity 或新的 activity ）已经恢复了正准备覆盖它，而调用该方法。<br>如果 activity 正准备返回与用户交互时后续会调用onRestart ，如果 activity 正在被释放则会调用 onDestroy 。</p>
+<p>onDestroy()：在 activity 被销毁前会调用该方法。这是 activity 能接收到的最后一个调用。可能会因为有人调用了 finish 方法使得当前activity 正在关闭，<br>系统为了保护内存临时释放这个 activity的实例，而调用该方法。你可以用 isFinishing 方法来区分这两种不同的情况。</p>
+<p><strong>三、如何启动一个新的Activity</strong><br>1.启动一个新的Activity，可以通过Context的startActivity()方法<br> 如Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>   startActivity(intent)<br>2.若启动一个新的Activity，并需要传递数据到此Activity<br>    Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>    Bundle bundle=new Bundle();<br>    bundle.putString(“name”,”张三”)<br>    intent.putExtra(bundle)<br>    startActivity(intent)<br>3.若启动新的带返回值的Activity,并将返回值传给启动它的Activity<br>实现如下<br>Intent intent=new Intent(ActvityDemo.this,TestActivity.class)<br>startActivityForResults(intent,0x1000)<br>在ActvityDemo中需要获取到TestActivity的返回值，则TestActivity需要实现如下<br>Intent intent =new Intent();<br>intent.putExtra(“backkey”,”test”);<br>setResult(0x1001, intent);<br>那么backkey值在哪里获取呢？必须重写onActivityResult方法，通过判断requestCode<br>if(backCode==0x1001){<br>String str = data.getStringExtra(“backkey”);<br>    Log.i(TAG, “返回的值为：”+str);<br>    }</p>
+<p><strong>四、保持Activity的运行状态</strong></p>
+<p><strong>五、完成退出Activity</strong><br>当进行back时，Activity回调用onDestory()方法，但进程没有被杀死，甚至调用finish()方法，进程还在。则需要完成退出，实现如下:<br>Intent intent=new Intent();<br>intent.setClass(context,MainActivity.class);<br>intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_UP);<br>intent.putExtra(“flag”,EXIT_APPLICATION);<br>context.startActivity(intent);</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/android开发/">android开发</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/android/">android</a>, <a href="/tags/Activity/">Activity</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/10/20/SVN命令使用详解/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/10/02/核心java系统——反射机制/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

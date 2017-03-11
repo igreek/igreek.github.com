@@ -1,0 +1,472 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git教程详解（一） | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="git教程详解（一）"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-27T07:47:17.000Z"><a href="/2015/11/27/git教程详解（一）/">2015-11-27</a></time>
+      
+      
+  
+    <h1 class="title">git教程详解（一）</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>git是一个很好的分布式版本管理工具，在git中，版本库又叫仓库，英文名为repository，可以简单的理解为本地的一个目录，用git进行管理，目录内的文件git进行删除，修改等操作时，git都可以跟踪，从而记录仓库的操作历史。<br><a id="more"></a></p>
+<h4 id="一、git简介"><a href="#一、git简介" class="headerlink" title="一、git简介"></a><strong>一、git简介</strong></h4><p>git中，版本库又叫仓库，英文名为repository，可以简单的理解为本地的一个目录，用git进行管理，目录内的文件git进行删除，修改等操作时，git都可以跟踪，从而记录仓库的操作历史。</p>
+<h3 id="二、创建仓库"><a href="#二、创建仓库" class="headerlink" title="二、创建仓库"></a><strong>二、创建仓库</strong></h3><p>在本地创建一个目录，如/user/temp/test/，然后在此目录下执行git init，就可将目录变成git管理的仓库。<br><img src="http://img.blog.csdn.net/20151127202612430" alt="这里写图片描述"><br>执行完后，是一个空仓库，包含一个隐藏的.git目录，若没看到该目录，linux上可以用 ls -ah 查看.<br><strong>(1).将文件添加到版本库</strong><br>所有的版本控制系统，其实只能跟踪文本文件的改动，比如TXT文件，网页，所有的程序代码等等，Git也不例外。版本控制系统可以告诉你每次的改动，比如在第5行加了一个单词“Linux”，在第8行删了一个单词“Windows”。而图片、视频这些二进制文件，虽然也能由版本控制系统管理，但没法跟踪文件的变化，<br>只能把二进制文件每次改动串起来，也就是只知道图片从100KB改成了120KB，但到底改了啥，版本控制系统不知道，也没法知道    。<br>1.现在在test目录或其子目录下添加一个readme.txt ,将该文件放到git仓库方式如下:<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> readme.text</span></div><div class="line">git commit -m <span class="string">"add new file"</span></div></pre></td></tr></table></figure></p>
+<p>上述命令中 -m 为本次提交的注释，是为了方便他人查看，所以需要加上。<br>2.若git想批量添加文件，可以将多个文件用逗号分隔，然后commit。<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">add</span><span class="bash"> <span class="built_in">test</span>1.txt <span class="built_in">test</span>2.txt</span></div><div class="line">git commit -m <span class="string">"add new file"</span></div></pre></td></tr></table></figure></p>
+<p><strong>(2).查看仓库的状态</strong><br>git status命令可以让我们时刻掌握仓库当前的状态。如图:</p>
+<p>上面的命令告诉我们，readme.txt被修改过了，但还没有准备提交的修改。<br>git diff可以告诉我们修改了什么内容。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">git</span> <span class="selector-tag">diff</span> <span class="selector-tag">readme</span><span class="selector-class">.txt</span></div></pre></td></tr></table></figure></p>
+<p><strong>(3).版本回退</strong><br>git会将修改的文件保存一个快照，一旦你把文件修改乱了或误删除文件，可以从最近的快照恢复，而不影响工作。</p>
+<ul>
+<li><p>git log 查看版本控制系统的修改记录<br> <img src="http://img.blog.csdn.net/20151127203423789" alt="这里写图片描述"><br> git log命令显示从最近到最远的提交日志，上述操作我们可以看到有2次提交，每次提交后，都会有一个commit Id(版本号).</p>
+</li>
+<li><p>git reset 回退版本</p>
+<p> Git必须知道当前版本是哪个版本，在Git中，用HEAD表示当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100。<br>git reset – hard HEAD^ 比如要将当前版本回退到上一个版本 ,HEAD^也可换成版本号.</p>
+</li>
+<li><p>git reflog 恢复版本</p>
+<p> 当你用 $ git reset –hard HEAD^</p>
+<p> 回退到上一个版本时，再想恢复回来，就必须找到恢复版本的commit id。Git提供了一个命令git reflog用来记录你的每一次命令：git reflog<br> <img src="http://img.blog.csdn.net/20151127203653884" alt="这里写图片描述"><br><strong>(4)删除文件</strong><br>1.一般情况下，你通常直接在文件管理器中把没用的文件删了，或者用rm命令删了  $ rm test.txt<br>2.git rm file 从版本库删除该文件，并且git commit<br>3.git checkout – test.txt 用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
+</li>
+</ul>
+<h3 id="三、远程仓库"><a href="#三、远程仓库" class="headerlink" title="三、远程仓库"></a><strong>三、远程仓库</strong></h3><p>远程仓库可以是在一台运行git的服务器上创建一个的仓库。类似网站如gitcafe ,github等都可进行仓库的托管。只要注册一个账号，可以获得免费的远程仓库。<br>由于在github上，你本地仓库和远程仓库的传输是通过ssh加密的。所以需要进行如下设置:<br>1.创建SSH key<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">ssh-keygen</span> <span class="selector-tag">-t</span> <span class="selector-tag">rsa</span> <span class="selector-tag">-C</span> "***********@<span class="keyword">163</span>.<span class="keyword">com</span>"</div></pre></td></tr></table></figure></p>
+<p>创建成功后，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。<br>2.登录github，配置ssh key ，如图所示:</p>
+<p><img src="http://img.blog.csdn.net/20151127203849320" alt="这里写图片描述"></p>
+<p>图中的Title任意填上，在Key文本框里粘贴id_rsa.pub文件的内容。<br>github 支持添加多个不同的key,假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了.<br><strong>(1)、添加仓库</strong><br>在上面操作配置好ssh key 后，就可以创建远程git仓库了，在github上，在右上角找到“Create a new repo”按钮，创建一个新的仓库。如图所示<br><img src="http://img.blog.csdn.net/20151127204002038" alt="这里写图片描述"></p>
+<p>创建好仓库后，需要和你本地的仓库进行关联，然后把本地的内容push到远程仓库中，则你需要在的本地库目录下，执行如下操作:<br><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote <span class="keyword">add</span><span class="bash"> origin git@github.com:igreek/Timber.git</span></div></pre></td></tr></table></figure></p>
+<p>执行后，你的远程库为origin。但此时还是没有内容，若把关联的本地库的内容push到origin上，则需要执行如下操作:</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</div></pre></td></tr></table></figure>
+<p>参数-u:第一次push时需要，以后可以省略。<br>推送成功后，可以立刻在GitHub页面中看到远程库的内容已经和本地一模一样。</p>
+<p><strong>(2)、从远程库克隆</strong><br>假如没有在本地创建仓库，在远程创建了一个仓库，想把远程仓库的内容克隆到本地的一个目录下。可以执行如下操作:<br><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="keyword">clone</span> <span class="title">origin</span> git@github.com:igreek/Timber.git</div></pre></td></tr></table></figure></p>
+<p>从上面的操作都是使用ssh协议，其实也可以其他的https协议，但它速度有些慢，端口有限制。</p>
+<p>总结:本篇主要介绍了git的作用，git 与其他版本工具的一些差异，git的创建仓库以及如何管理仓库等功能，涉及到一些git命令需要熟悉，git也是一个很实用的分布式系统，下篇将介绍git的分支管理。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/git教程/">git教程</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/git/">git</a>, <a href="/tags/版本管理/">版本管理</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/12/06/Android之数据存储（一）/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/11/24/核心java系列——异常处理机制/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

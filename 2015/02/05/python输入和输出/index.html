@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>python输入和输出 | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="python输入和输出"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-02-04T16:04:00.000Z"><a href="/2015/02/05/python输入和输出/">2015-02-05</a></time>
+      
+      
+  
+    <h1 class="title">python输入和输出</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>python的输入和输出可分为普控制台和文件等的读写，下面分析下python输入和输出的实现。<br><a id="more"></a></p>
+<h3 id="一、格式化输入和输出"><a href="#一、格式化输入和输出" class="headerlink" title="一、格式化输入和输出"></a><strong>一、格式化输入和输出</strong></h3><p>若要对输出格式进行格式化，则控制输出的方式有以下几种:<br>1.使用字符串切割和连接操作可以创建任何你想要的输出形式<br>2.使用 str.format() 方法<br>3.实例:  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="comment"># -*- coding:utf-8 -*-</span></div><div class="line"><span class="string">'''</span></div><div class="line">Created on 2015-2-4</div><div class="line"></div><div class="line">@author: Administrator</div><div class="line">'''</div><div class="line"><span class="comment">#格式化输入和输出</span></div><div class="line"><span class="comment">#1.str和repr函数 将数值转换为字符串</span></div><div class="line">s=<span class="string">'hello,world!'</span></div><div class="line"><span class="keyword">print</span> str(s)</div><div class="line"><span class="keyword">print</span> repr(s)</div><div class="line"> </div><div class="line">x=<span class="number">10</span>*<span class="number">3.25</span></div><div class="line">y=<span class="number">200</span>*<span class="number">200</span></div><div class="line">s= <span class="string">'the value of x is'</span>+repr(s)+<span class="string">','</span>+<span class="string">'the value of y is '</span>+str(y)</div><div class="line"><span class="keyword">print</span> s</div><div class="line"></div><div class="line"><span class="comment">#2.平方和立方表</span></div><div class="line"><span class="comment"># s.rjust(),s.center()等把字符串输出一列，并以某格式对齐</span></div><div class="line"><span class="comment"># for x in range(1,10):</span></div><div class="line"><span class="comment">#     print repr(x).rjust(2),repr(x*x).rjust(3),</span></div><div class="line"><span class="comment">#     print(repr(x*x*x).rjust(4))</span></div><div class="line"><span class="comment">#s.format() 调用时使用关键字参数，可以通过参数名来引用值，也可以用 ‘**’ 标志将这个字典以关键字参数的方式传入。</span></div><div class="line"><span class="keyword">print</span> <span class="string">'the story of &#123;0&#125;,&#123;1&#125; is &#123;other&#125;'</span>.format(<span class="string">'bill'</span>,<span class="string">'maryy'</span>, other=<span class="string">'jhone'</span>)</div><div class="line">table=&#123;<span class="string">'lu'</span>:<span class="number">123</span>,<span class="string">'wu'</span>:<span class="number">456</span>,<span class="string">'li'</span>:<span class="number">4568</span>&#125;</div><div class="line"><span class="keyword">print</span> <span class="string">'lu:&#123;lu:d&#125;;wu:&#123;wu:d&#125;'</span>.format(**table)</div></pre></td></tr></table></figure>
+<h3 id="二、文件的读写"><a href="#二、文件的读写" class="headerlink" title="二、文件的读写"></a><strong>二、文件的读写</strong></h3><p>文件的操作主要包含打开，读写，定位，遍历，关闭等。具体的方法如下实例:</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python</div><div class="line"># -<span class="strong">*- coding:utf-8 -*</span>-</div><div class="line">'''</div><div class="line">Created on 2015-2-4</div><div class="line"></div><div class="line">@author: Administrator</div><div class="line">'''</div><div class="line">#文件的读写</div><div class="line">#f=open(<span class="emphasis">'d:/test.txt'</span>,<span class="emphasis">'r'</span>)</div><div class="line">f=open(<span class="emphasis">'d:/test.txt'</span>,<span class="emphasis">'wb+'</span>)</div><div class="line">#f.read()返回读取若干数量的数据并以字符串返回其内部，其中size是可变的整数值,若没有指定size或size的值为负数</div><div class="line">#则返回文件中所有的内容,若读取到文件的末尾则f.read()会返回一个空字符串</div><div class="line">#result=f.read()</div><div class="line"># result=f.read(10)</div><div class="line"># print result</div><div class="line"></div><div class="line">'''</div><div class="line">f.readline():从文件中读取单独一行，字符串结尾会自动加上一个换行符（ \n ），只有当文件最后一行没有以换行符结尾时，</div><div class="line">这一操作才会被忽略.若f.readline返回一个空字符串，则表示达到了文件的末尾</div><div class="line">'''</div><div class="line"># line=f.readline()</div><div class="line"># print line</div><div class="line"></div><div class="line">'''</div><div class="line">f.readlines()：返回一个列表，其中包含了文件中所有的数据行.通常用于高效读取文件，避免将整个文件读入内存</div><div class="line">'''</div><div class="line"></div><div class="line"># lines=f.readlines()</div><div class="line"># print lines</div><div class="line"></div><div class="line">'''</div><div class="line">f.write()向文件中写入字符串内容</div><div class="line">f.tell() 返回一个整数，代表文件对象在文件中的指针位置</div><div class="line">f.seek(offset,from):指针在该操作中从指定的引用位置移动 offset个值，从from 开始移动</div><div class="line">'''</div><div class="line"># value=(<span class="emphasis">'answer:'</span>,12)</div><div class="line"># s=str(value)</div><div class="line"># f.write(s)</div><div class="line"># f.write(b"145df454fad")</div><div class="line"># print f.seek(5),f.seek(-2,2)</div><div class="line"></div><div class="line">'''</div><div class="line">with 处理文件对象是个好习惯。它的先进之处在于文件用完后会自动关闭，就算发生异常也没关系。它是 try-finally 块的简写</div><div class="line">'''</div><div class="line"># with open(<span class="emphasis">'d:test.txt'</span>,<span class="emphasis">'r'</span>) as f:</div><div class="line">#     pass</div><div class="line"># print f.closed</div></pre></td></tr></table></figure>
+<h3 id="三、pickle模块"><a href="#三、pickle模块" class="headerlink" title="三、pickle模块"></a><strong>三、pickle模块</strong></h3><p>假如对文件内容直接用read()输出整数，则需要经过数据类型的转换才能正确获取。而python为了解决这样的麻烦，提供pickle实现。实现方式如下:</p>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="code">    </span></div><div class="line">'''</div><div class="line"><span class="code">   pickle模块:可以将任何python对象封装为字符串，可以从字符串拆装成对象</span></div><div class="line"><span class="code">    若有一个对象x，以写模式打开文件对象，则pickle可以实现封装，若将f以读模式打开，则可拆装成对象</span></div><div class="line">'''</div><div class="line">pickle.dump(x,f)#封装</div><div class="line">x=pickle.load(f)#拆装</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/python开发/">python开发</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/python/">python</a>, <a href="/tags/输入和输出/">输入和输出</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/02/07/python标准库介绍/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/01/15/Ant之build.xml分析/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

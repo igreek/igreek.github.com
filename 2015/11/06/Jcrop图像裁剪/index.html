@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Jcrop图像裁剪 | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Jcrop图像裁剪"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-06T11:28:00.000Z"><a href="/2015/11/06/Jcrop图像裁剪/">2015-11-06</a></time>
+      
+      
+  
+    <h1 class="title">Jcrop图像裁剪</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <blockquote>
+<p>Jquey Jcrop是一款功能强大的图像裁剪插件，结合服务端的处理可实现图片裁剪，改变等功能。<br><a id="more"></a></p>
+<h2 id="一、Jcrop简介"><a href="#一、Jcrop简介" class="headerlink" title="一、Jcrop简介"></a>一、Jcrop简介</h2></blockquote>
+<pre><code>Jquey Jcrop是一款功能强大的图像裁剪插件，结合服务端的处理可实现图片裁剪，改变等功能。
+具有如下特点:
+显示图像或块对象
+支持图片的最大，最小值的设置
+有交互性的API，包含动画
+提供CSS样式的定义
+支持IOS,android等平台
+</code></pre><h2 id="二、使用方法"><a href="#二、使用方法" class="headerlink" title="二、使用方法"></a>二、使用方法</h2><pre><code>1.载入 CSS 文件
+</code></pre><figure class="highlight flix"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link <span class="keyword">type</span>=<span class="string">"text/css"</span> <span class="keyword">rel</span>=<span class="string">"stylesheet"</span> href=<span class="string">"../css/jquery.Jcrop.css"</span> /&gt;</div></pre></td></tr></table></figure>
+<p>2.载入 JavaScript 文件<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">script</span>  <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span> </div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"../js/jquery.Jcrop.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>3.给 IMG 标签加上 ID<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"Preview-pic"</span> <span class="built_in">id</span>=<span class="string">"previewIcon"</span>&gt;</div><div class="line">   &lt;img <span class="built_in">id</span>=<span class="string">"imgCrop"</span> <span class="built_in">class</span>=<span class="string">"imgCrop"</span> <span class="built_in">name</span>=<span class="string">"imgCrop"</span> </div><div class="line">	width=<span class="string">"300"</span> height=<span class="string">"300"</span> border=<span class="string">"0"</span> src=<span class="string">""</span>/&gt;	</div><div class="line">  &lt;/<span class="keyword">div</span>&gt;</div></pre></td></tr></table></figure></p>
+<p>4.调用 Jcrop<br><figure class="highlight gams"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jcrop_api=<span class="symbol">$</span>.Jcrop(<span class="string">'#imgCrop'</span>,&#123;</div><div class="line">		aspectRatio: <span class="number">1</span>,</div><div class="line">		onChange: showCoords, <span class="comment">// 选框改变时的事件</span></div><div class="line">		onSelect: showCoords <span class="comment">// 选框选定时的事件</span></div><div class="line">	&#125;);</div></pre></td></tr></table></figure></p>
+<h2 id="三、使用实例"><a href="#三、使用实例" class="headerlink" title="三、使用实例"></a>三、使用实例</h2><p>   1.下载Jcop的依赖文件，下载地址如下:<br> <a href="http://deepliquid.com/content/Jcrop.html,将css和js文件引入项目中" target="_blank" rel="external">http://deepliquid.com/content/Jcrop.html,将css和js文件引入项目中</a>    。</p>
+<p> 2.页面定义<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;header <span class="built_in">class</span>=<span class="string">"head-revision-top clearfix"</span>&gt;</div><div class="line"> &lt;h4 <span class="built_in">class</span>=<span class="string">"fl"</span> <span class="built_in">id</span>=<span class="string">"sysField"</span>&gt;</div><div class="line">	&lt;a href=<span class="string">""</span>&gt;系统头像&lt;/a&gt;</div><div class="line">  &lt;/h4&gt;</div><div class="line">  &lt;p <span class="built_in">class</span>=<span class="string">"fr head-revision-file"</span>&gt;</div><div class="line">  &lt;input <span class="built_in">class</span>=<span class="string">"head-revision-input"</span> type=<span class="string">"file"</span> </div><div class="line">		accept=<span class="string">"image/*"</span> <span class="built_in">name</span>=<span class="string">"uploadFile"</span> <span class="built_in">id</span>=<span class="string">"uploadFile"</span>      onchange=<span class="string">"checkImgType(this);"</span> /&gt;</div><div class="line"> &lt;/p&gt;</div><div class="line">&lt;/header&gt;</div><div class="line">&lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"head-revision mt20 clearfix"</span> <span class="built_in">id</span>=<span class="string">"uploadIcon"</span>&gt;</div><div class="line">  &lt;<span class="keyword">div</span> <span class="built_in">class</span>=<span class="string">"Preview-pic"</span> <span class="built_in">id</span>=<span class="string">"previewIcon"</span>&gt;</div><div class="line">	&lt;img <span class="built_in">id</span>=<span class="string">"imgCrop"</span> <span class="built_in">class</span>=<span class="string">"imgCrop"</span> <span class="built_in">name</span>=<span class="string">"imgCrop"</span> </div><div class="line">		width=<span class="string">"300"</span> height=<span class="string">"300"</span> border=<span class="string">"0"</span> src=<span class="string">""</span>/&gt;	</div><div class="line">  </div><div class="line">  &lt;/<span class="keyword">div</span>&gt;</div></pre></td></tr></table></figure></p>
+<p>3.js实现<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div></pre></td><td class="code"><pre><div class="line"> <span class="keyword">var</span> firstFlag = <span class="literal">false</span>,count=<span class="number">0</span>;</div><div class="line"><span class="keyword">var</span> jcrop_api, boundx, boundy;</div><div class="line">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	$(<span class="string">'#userIconBtn'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">var</span> x = $(<span class="string">"#x"</span>).val();</div><div class="line">		<span class="keyword">var</span> y = $(<span class="string">"#y"</span>).val();</div><div class="line">		<span class="keyword">var</span> w = $(<span class="string">"#w"</span>).val();</div><div class="line">		<span class="keyword">var</span> h = $(<span class="string">"#h"</span>).val();</div><div class="line">		<span class="keyword">if</span> (w == <span class="number">0</span> || h == <span class="number">0</span>) &#123;</div><div class="line">			alert(<span class="string">"您还没有选择图片的剪切区域,不能进行剪切图片!"</span>);</div><div class="line">			<span class="keyword">return</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			$.ajax(&#123;</div><div class="line">				<span class="attr">url</span>: <span class="string">''</span>,</div><div class="line">				<span class="attr">data</span>: $(<span class="string">'#uploadIconForm'</span>).serialize(),</div><div class="line">				<span class="attr">type</span>: <span class="string">"POST"</span>,</div><div class="line">				<span class="attr">beforeSend</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></div><div class="line">				&#123;  </div><div class="line">				&#125;,</div><div class="line">				<span class="attr">success</span>: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span></div><div class="line">				&#123;</div><div class="line">					<span class="comment">// 提交成功，刷新页面</span></div><div class="line">		        	<span class="comment">//location.reload(true);</span></div><div class="line">					<span class="built_in">window</span>.location.href=<span class="string">""</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;);</div><div class="line"></div><div class="line">		&#125;</div><div class="line">	&#125;);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">/**检查图片上传类型*/</span>          </div><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">checkImgType</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line"> <span class="comment">//更换头像销毁原有的jcrop	</span></div><div class="line"> <span class="keyword">if</span>(count&gt;=<span class="number">1</span>)&#123;</div><div class="line"> 	firstFlag=<span class="literal">false</span>;</div><div class="line"> 	jcrop_api.destroy();</div><div class="line"> &#125;</div><div class="line">  <span class="keyword">var</span> uploadFile = <span class="string">''</span>;    </div><div class="line">  <span class="comment">//获取图片的全路径   </span></div><div class="line">  <span class="keyword">var</span> imgFilePath = getImgFullPath(obj);        </div><div class="line">  <span class="keyword">var</span> endIndex = imgFilePath.lastIndexOf(<span class="string">"\\"</span>);   </div><div class="line">  <span class="keyword">var</span> lastIndex = imgFilePath.length-endIndex<span class="number">-1</span>;   </div><div class="line">  <span class="keyword">if</span> (endIndex != <span class="number">-1</span>)   </div><div class="line">     uploadFile= imgFilePath.substr(endIndex+<span class="number">1</span>,lastIndex);   </div><div class="line">  <span class="keyword">else</span>  </div><div class="line">     uploadFile = imgFilePath;        </div><div class="line">       </div><div class="line">  <span class="keyword">var</span> tag = <span class="literal">true</span>;               </div><div class="line">  endIndex = imgFilePath.lastIndexOf(<span class="string">"."</span>);              </div><div class="line">  <span class="keyword">if</span> (endIndex == <span class="number">-1</span>)    </div><div class="line">    tag = <span class="literal">false</span>;   </div><div class="line">       </div><div class="line">  <span class="keyword">var</span> ImgName = imgFilePath.substr(endIndex+<span class="number">1</span>,lastIndex);   </div><div class="line">  ImgName = ImgName.toUpperCase();           </div><div class="line">    </div><div class="line">  <span class="keyword">if</span> (ImgName !=<span class="string">"GIF"</span> &amp;&amp; ImgName !=<span class="string">"JPG"</span> &amp;&amp; ImgName !=<span class="string">"PNG"</span> &amp;&amp; ImgName !=<span class="string">"BMP"</span>)&#123;    </div><div class="line">      tag=<span class="literal">false</span>;   </div><div class="line">  &#125;</div><div class="line">  <span class="keyword">if</span> (!tag) &#123;   </div><div class="line">      alert(<span class="string">"上传图片的文件类型必须为: *.gif,*.jpg,*.png,*.bmp,请重新选择!"</span>)   </div><div class="line">      Upload.clear(obj);                        </div><div class="line">      <span class="keyword">return</span> <span class="literal">false</span>;   </div><div class="line">  &#125;<span class="keyword">else</span>&#123;</div><div class="line">  		count++;</div><div class="line">		$.ajaxFileUpload(&#123;  </div><div class="line">                <span class="attr">url</span>: <span class="string">"user!uploadFile"</span>,            <span class="comment">//需要链接到服务器地址  </span></div><div class="line">                secureuri:<span class="literal">false</span>,  </div><div class="line">                <span class="attr">fileElementId</span>:<span class="string">"uploadFile"</span>,                  <span class="comment">//文件选择框的id属性  </span></div><div class="line">                dataType: <span class="string">"json"</span>,                            <span class="comment">//服务器返回的格式，可以是json  </span></div><div class="line">                success: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">					<span class="keyword">if</span>(data.resultCode=<span class="number">1</span>)&#123;</div><div class="line">						$(<span class="string">"#imgCrop"</span>).attr(<span class="string">"src"</span>,data.resultInfo);</div><div class="line">						$(<span class="string">"#imgCrop"</span>).attr(<span class="string">"width"</span>,data.width);</div><div class="line">						$(<span class="string">"#imgCrop"</span>).attr(<span class="string">"height"</span>,data.height);</div><div class="line">						$(<span class="string">"#width"</span>).val(data.width);</div><div class="line">						$(<span class="string">"#height"</span>).val(data.height);</div><div class="line">						$(<span class="string">"#imgFileExt"</span>).val(data.imgFileExt);</div><div class="line">						$(<span class="string">"#oldImgPath"</span>).val(data.oldImgPath);</div><div class="line">						jcrop_api=$.Jcrop(<span class="string">'#imgCrop'</span>,&#123;</div><div class="line">							<span class="attr">aspectRatio</span>: <span class="number">1</span>,</div><div class="line">							<span class="attr">onChange</span>: showCoords, <span class="comment">// 选框改变时的事件</span></div><div class="line">							onSelect: showCoords <span class="comment">// 选框选定时的事件</span></div><div class="line">						&#125;);</div><div class="line">					&#125;<span class="keyword">else</span>&#123;</div><div class="line">						alert(<span class="string">"系统连接有误,请重新上传或连接管理员"</span>);</div><div class="line">					&#125;</div><div class="line">					jcrop_api.enable();</div><div class="line">					jcrop_api.setImage(data.resultInfo);</div><div class="line">					jcrop_api.animateTo([<span class="number">0</span>,<span class="number">0</span>,<span class="number">200</span>,<span class="number">200</span>]);</div><div class="line">					jcrop_api.setOptions(&#123;</div><div class="line">								 <span class="attr">allowResize</span>:<span class="literal">true</span>,</div><div class="line">								 <span class="attr">allowSelect</span>: <span class="literal">false</span>,</div><div class="line">								 <span class="attr">allowMove</span>:<span class="literal">true</span></div><div class="line">								 &#125;);</div><div class="line">					<span class="comment">//获取图片的实际尺寸			 </span></div><div class="line">					<span class="keyword">var</span> bounds=jcrop_api.getBounds();</div><div class="line">					boundx=bounds[<span class="number">0</span>];</div><div class="line">					boundy=bounds[<span class="number">1</span>];</div><div class="line">				&#125; </div><div class="line">            &#125;);  </div><div class="line">  		&#125;</div><div class="line">&#125;     </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getImgFullPath</span>(<span class="params">obj</span>) </span>&#123;   </div><div class="line">    <span class="keyword">if</span> (obj) &#123;     </div><div class="line">       <span class="comment">//ie     </span></div><div class="line">       <span class="keyword">if</span> (<span class="built_in">window</span>.navigator.userAgent.indexOf(<span class="string">"MSIE"</span>) &gt;= <span class="number">1</span>) &#123;     </div><div class="line">           obj.select();     </div><div class="line">           <span class="keyword">return</span> <span class="built_in">document</span>.selection.createRange().text;     </div><div class="line">       &#125;     </div><div class="line">       <span class="comment">//firefox     </span></div><div class="line">       <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">window</span>.navigator.userAgent.indexOf(<span class="string">"Firefox"</span>) &gt;= <span class="number">1</span>) &#123;     </div><div class="line">           <span class="keyword">if</span> (obj.files) &#123;     </div><div class="line">               <span class="keyword">return</span> obj.files.item(<span class="number">0</span>).getAsDataURL();     </div><div class="line">           &#125;     </div><div class="line">           <span class="keyword">return</span> obj.value;     </div><div class="line">       &#125;            </div><div class="line">       <span class="keyword">return</span> obj.value;     </div><div class="line">   &#125;     </div><div class="line">&#125; </div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">showCoords</span>(<span class="params">c</span>) </span>&#123;</div><div class="line">	$(<span class="string">'#x'</span>).val(c.x);</div><div class="line">	$(<span class="string">'#y'</span>).val(c.y);</div><div class="line">	$(<span class="string">'#x2'</span>).val(c.x2);</div><div class="line">	$(<span class="string">'#y2'</span>).val(c.y2);</div><div class="line">	$(<span class="string">'#w'</span>).val(c.w);</div><div class="line">	$(<span class="string">'#h'</span>).val(c.h);</div><div class="line">	<span class="keyword">if</span>(!firstFlag)&#123;</div><div class="line">		exchange();</div><div class="line">	&#125;</div><div class="line">	showPreview(c);</div><div class="line"></div><div class="line">&#125;		</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">exchange</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	firstFlag = <span class="literal">true</span>;</div><div class="line">	$(<span class="string">'#preview'</span>).attr(<span class="string">"src"</span>, $(<span class="string">'#imgCrop'</span>).attr(<span class="string">"src"</span>));</div><div class="line">	</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">showPreview</span>(<span class="params">coords</span>) </span>&#123;</div><div class="line">	<span class="keyword">if</span> (<span class="built_in">parseInt</span>(coords.w) &gt; <span class="number">0</span>) &#123;</div><div class="line">		<span class="keyword">var</span> rx = <span class="number">200</span> / coords.w;</div><div class="line">		<span class="keyword">var</span> ry = <span class="number">200</span> / coords.h;</div><div class="line">		$(<span class="string">'#preview'</span>).css(&#123;</div><div class="line">			<span class="attr">width</span>:<span class="built_in">Math</span>.round(<span class="number">200</span>/ coords.w * boundx) + <span class="string">'px'</span>,  <span class="comment">//200 为预览div的宽和高</span></div><div class="line">            height:<span class="built_in">Math</span>.round(<span class="number">200</span>/ coords.h * boundy)+ <span class="string">'px'</span>, </div><div class="line">			<span class="attr">marginLeft</span> : <span class="string">'-'</span> + <span class="built_in">Math</span>.round(rx * coords.x) + <span class="string">'px'</span>,</div><div class="line">			<span class="attr">marginTop</span> : <span class="string">'-'</span> + <span class="built_in">Math</span>.round(ry * coords.y) + <span class="string">'px'</span></div><div class="line">		&#125;);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>4.服务器处理（java）<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">String</span> uploadFile() &#123;</div><div class="line">	<span class="keyword">int</span> result = Constant.RET_OK;</div><div class="line">	<span class="keyword">String</span> resultUrl = <span class="string">""</span>;</div><div class="line">	<span class="keyword">String</span> imgUploadPath = <span class="string">""</span>;</div><div class="line">	<span class="comment">// 图片初始化高度与宽度</span></div><div class="line">	<span class="keyword">String</span> <span class="built_in">width</span> = null;</div><div class="line">	<span class="keyword">String</span> <span class="built_in">height</span> = null;</div><div class="line">	<span class="keyword">int</span> imgWidth = <span class="number">0</span>;</div><div class="line">	<span class="keyword">int</span> imgHeight = <span class="number">0</span>;</div><div class="line">	SimpleDateFormat df = <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyyMMddHHmmss"</span>);</div><div class="line">	<span class="keyword">String</span> userWebAppPath = getWebAppPath();</div><div class="line">	<span class="comment">/** 检查是否有图片上传文件夹 */</span></div><div class="line">	FileUtil.checkImageDir(userWebAppPath);</div><div class="line">	<span class="built_in">try</span> &#123;</div><div class="line">		UserPOJO userSession = (UserPOJO) getSession(Constant.USERLOGINSESSION);</div><div class="line">		<span class="built_in">if</span> (null == userSession) &#123;</div><div class="line">			result = Constant.ISSESSIONERROR;</div><div class="line">		&#125;</div><div class="line">		<span class="comment">// 指定图片宽度和高度</span></div><div class="line">		<span class="built_in">width</span> = getRequest().getParameter(<span class="string">"width"</span>);</div><div class="line">		<span class="built_in">if</span> (null == <span class="built_in">width</span> || <span class="string">""</span>.equals(<span class="built_in">width</span>)) &#123;</div><div class="line">			<span class="built_in">width</span> = <span class="string">"300"</span>;</div><div class="line">		&#125;</div><div class="line">		<span class="built_in">height</span> = getRequest().getParameter(<span class="string">"height"</span>);</div><div class="line">		<span class="built_in">if</span> (null == <span class="built_in">height</span> || <span class="string">""</span>.equals(<span class="built_in">height</span>)) &#123;</div><div class="line">			<span class="built_in">height</span> = <span class="string">"300"</span>;</div><div class="line">		&#125;</div><div class="line">		imgWidth = Integer.<span class="built_in">parseInt</span>(<span class="built_in">width</span>);</div><div class="line">		imgHeight = Integer.<span class="built_in">parseInt</span>(<span class="built_in">height</span>);</div><div class="line">		List&lt;<span class="built_in">File</span>&gt; files = getUploadFile();</div><div class="line">		<span class="built_in">if</span> (files != null &amp;&amp; files.<span class="built_in">size</span>() &gt; <span class="number">0</span>) &#123;</div><div class="line">			<span class="built_in">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; files.<span class="built_in">size</span>(); i++) &#123;</div><div class="line">				<span class="built_in">File</span> userFile = files.<span class="built_in">get</span>(i);</div><div class="line">				<span class="built_in">try</span> &#123;</div><div class="line">					<span class="keyword">String</span> filePath = FileUtil.saveLocalImg(userFile, userWebAppPath + <span class="string">"\\"</span></div><div class="line">							+ getUploadFileFileName().<span class="built_in">get</span>(<span class="number">0</span>));</div><div class="line">					BufferedImage src = ImageIO.<span class="built_in">read</span>(<span class="keyword">new</span> <span class="built_in">File</span>(filePath)); <span class="comment">// 读入文件</span></div><div class="line">					<span class="keyword">int</span> imgSrcWidth = src.getWidth(); <span class="comment">// 得到源图宽</span></div><div class="line">					<span class="keyword">int</span> imgSrcHeight = src.getHeight(); <span class="comment">// 得到源图长</span></div><div class="line">					<span class="comment">// 重新指定大小</span></div><div class="line">					<span class="built_in">if</span> (imgSrcWidth &gt;= imgSrcHeight) &#123;</div><div class="line">						imgWidth = imgSrcWidth &gt; <span class="number">300</span> ? <span class="number">300</span> : imgSrcWidth;</div><div class="line">						imgHeight = (<span class="keyword">int</span>) (imgWidth * (<span class="keyword">float</span>) imgSrcHeight / (<span class="keyword">float</span>) imgSrcWidth);</div><div class="line">						imgHeight = imgHeight &lt; <span class="number">200</span> ? <span class="number">200</span> : imgHeight;</div><div class="line">					&#125; <span class="built_in">else</span> &#123;</div><div class="line">						imgHeight = imgSrcHeight &gt; <span class="number">300</span> ? <span class="number">300</span> : imgSrcHeight;</div><div class="line">						imgWidth = (<span class="keyword">int</span>) (imgHeight * (<span class="keyword">float</span>) imgSrcWidth / (<span class="keyword">float</span>) imgSrcHeight);</div><div class="line">						imgWidth = imgWidth &lt; <span class="number">200</span> ? <span class="number">200</span> : imgWidth;</div><div class="line">					&#125;</div><div class="line">					<span class="comment">// 按照图片的设置大小生成</span></div><div class="line">					ImageCut.scale(src, userFile, imgWidth, imgHeight);</div><div class="line">					log.info(<span class="string">"创建"</span> + imgWidth + <span class="string">"*"</span> + imgHeight + <span class="string">"图片成功"</span>);</div><div class="line">					<span class="comment">// 上传图片到图片服务器并获得访问地址</span></div><div class="line">					FileInputStream fis = <span class="keyword">new</span> FileInputStream(userFile);</div><div class="line">					<span class="keyword">byte</span>[] fileBytes = <span class="keyword">new</span> <span class="keyword">byte</span>[fis.<span class="built_in">available</span>()];</div><div class="line">					fis.<span class="built_in">read</span>(fileBytes);</div><div class="line">					fis.<span class="built_in">close</span>();</div><div class="line">					resultUrl = FileUtil.getImageUrl(FileUtil.getExtName(<span class="keyword">this</span>.getUploadFileFileName().<span class="built_in">get</span>(<span class="number">0</span>)),</div><div class="line">							fileBytes);</div><div class="line">					<span class="comment">// 将远程服务器得到的文件保存到该服务器</span></div><div class="line">					<span class="keyword">String</span> newFileName = df.format(<span class="keyword">new</span> Date()) + <span class="string">"_"</span> + <span class="keyword">new</span> Random().nextInt(<span class="number">1000</span>) + <span class="string">"."</span></div><div class="line">							+ FileUtil.getExtName(<span class="keyword">this</span>.getUploadFileFileName().<span class="built_in">get</span>(<span class="number">0</span>));</div><div class="line">					imgUploadPath = IMGROOT + newFileName;</div><div class="line">					FileUtil.saveImageToLocal(resultUrl, userWebAppPath + newFileName);</div><div class="line">				&#125; <span class="built_in">catch</span> (IOException e) &#123;</div><div class="line">					e.printStackTrace();</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125; <span class="built_in">catch</span> (Exception e) &#123;</div><div class="line">		e.printStackTrace();</div><div class="line">		result = Constant.SYSTEM_ERROR;</div><div class="line">	&#125;</div><div class="line">	Map&lt;Object, Object&gt; infoMap = <span class="keyword">new</span> HashMap&lt;Object, Object&gt;();</div><div class="line">	infoMap.<span class="built_in">put</span>(Constant.RESULT_CODE_KEY, result);</div><div class="line">	infoMap.<span class="built_in">put</span>(Constant.RESULT_INFO, resultUrl);</div><div class="line">	infoMap.<span class="built_in">put</span>(<span class="string">"width"</span>, imgWidth);</div><div class="line">	infoMap.<span class="built_in">put</span>(<span class="string">"height"</span>, imgHeight);</div><div class="line">	infoMap.<span class="built_in">put</span>(<span class="string">"oldImgPath"</span>, imgUploadPath);</div><div class="line">	infoMap.<span class="built_in">put</span>(<span class="string">"imgFileExt"</span>, FileUtil.getExtName(<span class="keyword">this</span>.getUploadFileFileName().<span class="built_in">get</span>(<span class="number">0</span>)));</div><div class="line">	JSONObject json = JSONObject.fromObject(infoMap);</div><div class="line">	<span class="built_in">writeJSON</span>(json.toString());</div><div class="line">	<span class="built_in">return</span> null;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="四、API接口及参数说明"><a href="#四、API接口及参数说明" class="headerlink" title="四、API接口及参数说明"></a>四、API接口及参数说明</h2><pre><code>http://code.ciaoca.com/jquery/jcrop/    
+</code></pre><h2 id="五、实现效果"><a href="#五、实现效果" class="headerlink" title="五、实现效果"></a>五、实现效果</h2><p> <img src="http://img.blog.csdn.net/20151105171544306" alt="这里写图片描述"></p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/前端插件/">前端插件</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/图像裁剪/">图像裁剪</a>, <a href="/tags/Jcrop/">Jcrop</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/11/07/jquery实现页面无限滚动插件/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/11/05/swiper图片轮播插件/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>

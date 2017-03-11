@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>核心java系列——I/O流详解（一） | 阿长小站</title>
+  <meta name="author" content="greekw">
+  
+  <meta name="description" content="学习总结 思考感悟 知识管理">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="核心java系列——I/O流详解（一）"/>
+  <meta property="og:site_name" content="阿长小站"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon" type="image/x-ico">
+  <link rel="alternate" href="http://blog.greekw.com/atom.xml" title="阿长小站" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//libs.baidu.com/jquery/1.8.0/jquery.min.js"></script>
+  <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?342455f7213d6823f6fb04e6524cf764";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+
+<body>
+  <header id="header" class="inner">
+<div class="alignleft">
+  <h1><a href="/">阿长小站</a></h1>
+  <h2><a href="/">程序猿，极客粉，未来的布道师</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/archives">归档</a></li>
+    
+      <li><a href="/tools">工具</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+<li> <a title="把这个链接拖到你的Chrome收藏夹工具栏中" href='javascript:(function() {
+	function c() {
+		var e = document.createElement("link");
+		e.setAttribute("type", "text/css");
+		e.setAttribute("rel", "stylesheet");
+		e.setAttribute("href", f);
+		e.setAttribute("class", l);
+		document.body.appendChild(e)
+	}
+ 
+	function h() {
+		var e = document.getElementsByClassName(l);
+		for (var t = 0; t < e.length; t++) {
+			document.body.removeChild(e[t])
+		}
+	}
+ 
+	function p() {
+		var e = document.createElement("div");
+		e.setAttribute("class", a);
+		document.body.appendChild(e);
+		setTimeout(function() {
+			document.body.removeChild(e)
+		}, 100)
+	}
+ 
+	function d(e) {
+		return {
+			height : e.offsetHeight,
+			width : e.offsetWidth
+		}
+	}
+ 
+	function v(i) {
+		var s = d(i);
+		return s.height > e && s.height < n && s.width > t && s.width < r
+	}
+ 
+	function m(e) {
+		var t = e;
+		var n = 0;
+		while (!!t) {
+			n += t.offsetTop;
+			t = t.offsetParent
+		}
+		return n
+	}
+ 
+	function g() {
+		var e = document.documentElement;
+		if (!!window.innerWidth) {
+			return window.innerHeight
+		} else if (e && !isNaN(e.clientHeight)) {
+			return e.clientHeight
+		}
+		return 0
+	}
+ 
+	function y() {
+		if (window.pageYOffset) {
+			return window.pageYOffset
+		}
+		return Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+	}
+ 
+	function E(e) {
+		var t = m(e);
+		return t >= w && t <= b + w
+	}
+ 
+	function S() {
+		var e = document.createElement("audio");
+		e.setAttribute("class", l);
+		e.src = i;
+		e.loop = false;
+		e.addEventListener("canplay", function() {
+			setTimeout(function() {
+				x(k)
+			}, 500);
+			setTimeout(function() {
+				N();
+				p();
+				for (var e = 0; e < O.length; e++) {
+					T(O[e])
+				}
+			}, 15500)
+		}, true);
+		e.addEventListener("ended", function() {
+			N();
+			h()
+		}, true);
+		e.innerHTML = " <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>";
+		document.body.appendChild(e);
+		e.play()
+	}
+ 
+	function x(e) {
+		e.className += " " + s + " " + o
+	}
+ 
+	function T(e) {
+		e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]
+	}
+ 
+	function N() {
+		var e = document.getElementsByClassName(s);
+		var t = new RegExp("\\b" + s + "\\b");
+		for (var n = 0; n < e.length; ) {
+			e[n].className = e[n].className.replace(t, "")
+		}
+	}
+ 
+	var e = 30;
+	var t = 30;
+	var n = 350;
+	var r = 350;
+	var i = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3";
+	var s = "mw-harlem_shake_me";
+	var o = "im_first";
+	var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];
+	var a = "mw-strobe_light";
+	var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";
+	var l = "mw_added_css";
+	var b = g();
+	var w = y();
+	var C = document.getElementsByTagName("*");
+	var k = null;
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			if (E(A)) {
+				k = A;
+				break
+			}
+		}
+	}
+	if (A === null) {
+		console.warn("Could not find a node of the right size. Please try a different page.");
+		return
+	}
+	c();
+	S();
+	var O = [];
+	for (var L = 0; L < C.length; L++) {
+		var A = C[L];
+		if (v(A)) {
+			O.push(A)
+		}
+	}
+})()    '>High一下</a> </li>
+
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-11-24T07:47:17.000Z"><a href="/2015/11/24/核心java系列——I-O流详解(一)/">2015-11-24</a></time>
+      
+      
+  
+    <h1 class="title">核心java系列——I/O流详解（一）</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>流的概念流是一系列有顺序的字节的集合，是网络传输的载体，流可以包装成基本数据类型或对象，流有输入和输出，输入时是从流从数据源流向程序输出时是流从程序传向数据源，而数据源可以是内存，文件，网络或程序等。<br><a id="more"></a></p>
+<h3 id="一、流的概念"><a href="#一、流的概念" class="headerlink" title="一、流的概念"></a>一、流的概念</h3><p>流是一系列有顺序的字节的集合，是网络传输的载体，流可以包装成基本数据类型或对象，流有输入和输出，输入时是从流从数据源流向程序输出时是流从程序传向数据源，而数据源可以是内存，文件，网络或程序等，下面是流的输入和输出的图形化：<br><img src="http://img.blog.csdn.net/20151126200300792" alt="这里写图片描述"></p>
+<h3 id="二、流的分类"><a href="#二、流的分类" class="headerlink" title="二、流的分类"></a>二、流的分类</h3><p><strong>(1)、流有字节流，字符流，输入流和输出流等。</strong></p>
+<ul>
+<li>根据处理方向不同可分为：输入流和输出流。</li>
+<li>根据处理数据类型不同可分为：字节流和字符流。<br>字节流和字符流的处理原理是相同的，只是处理的数据类型不同。<br>字节流是以字节为单位来传输，一个字节是8bit;<br>字符流是以字符为单位来传输，一个字符是16bit。</li>
+<li>根据分工的不同可分为：节点流和处理流</li>
+</ul>
+<p><strong>(2)、java I/O流基本类有</strong><br>字节流的抽象基类：<br>InputStream(字节输入流),OutputStream(字节输出流)<br>字符流的抽象基类:<br>Reader(字符输入流)，writer(字符输出流)<br>其他类都由这4个抽象基本派生出来，详细的流的类图结构如下:<br><img src="http://img.blog.csdn.net/20151126200445656" alt="这里写图片描述"></p>
+<h3 id="三、输入和输出流"><a href="#三、输入和输出流" class="headerlink" title="三、输入和输出流"></a>三、输入和输出流</h3><p><strong>(1)、输入可使用：</strong><br>1.InputStream – 一个字节一个字节(byte)地从数据源读取。<br><em>读取一个字节并以整数的形式返回(0~255),如果返回-1已到输入流的末尾。<br>int read() ；
+</em>读取一系列字节并存储到一个数组buffer，返回实际读取的字节数，如果读取前已到输入流的末尾返回-1。<br>int read(byte[] buffer) ；<br><em>读取length个字节并存储到一个字节数组buffer，从off位置开始存,最多len， 返回实际读取的字节数，如果读取前以到输入流的末尾返回-1。<br>int read(byte[] buffer, int off, int len)  ；                  
+</em>关闭流释放内存资源。<br>void close() ;<br>2.Reader – 一个字符一个字符(char)地从数据源读取。<br><em>读取一个字符并以整数的形式返回(0~255),如果返回-1已到输入流的末尾。<br>int read() ；
+</em>读取一系列字符并存储到一个数组buffer，返回实际读取的字符数，如果读取前已到输入流的末尾返回-1。<br>int read(char[] cbuf) ；<br><em>读取length个字符,并存储到一个数组buffer，从off位置开始存,最多读取len，返回实际读取的字符数，如果读取前以到输入流的末尾返回-1。<br>int read(char[] cbuf, int off, int len)                  
+</em>关闭流释放内存资源。<br>void close()<br><strong>(2)、输入流可使用</strong><br>1.OutputStream:<br><em>向输出流中写入一个字节数据,该字节数据为参数b的低8位。<br>void write(int b) ;
+</em>将一个字节类型的数组中的数据写入输出流。<br>void write(byte[] b);<br><em>将一个字节类型的数组中的从指定位置（off）开始的,len个字节写入到输出流。<br>void write(byte[] b, int off, int len);
+</em>关闭流释放内存资源。<br>void close();<br>*将输出流中缓冲的数据全部写出到目的地。<br>void flush();</p>
+<p>2.Writer:<br><em>向输出流中写入一个字符数据,该字节数据为参数b的低16位。<br>void write(int c);
+</em>将一个字符类型的数组中的数据写入输出流，<br>void write(char[] cbuf) throws IOException<br><em>将一个字符类型的数组中的从指定位置（offset）开始的,length个字符写入到输出流。<br>void write(char[] cbuf, int offset, int length);
+</em>将一个字符串中的字符写入到输出流。<br>void write(String string);<br><em>将一个字符串从offset开始的length个字符写入到输出流。<br>void write(String string, int offset, int length);
+</em>关闭流释放内存资源。<br>void close() throws IOException<br>*将输出流中缓冲的数据全部写出到目的地。<br>void flush() throws IOException</p>
+<h3 id="四、读写文本文件"><a href="#四、读写文本文件" class="headerlink" title="四、读写文本文件"></a>四、读写文本文件</h3><p><strong>(1).写文本文件</strong><br>1.FileWriter是继承writer类，可调用write()方法往文本中写入内容。下面程序为调用FileWriter类的write(type c)方法的实现:</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">String</span> fileName=<span class="string">"d:\\demo1.txt"</span>;</div><div class="line">FileWriter <span class="built_in">write</span>=<span class="keyword">new</span> FileWriter(fileName);</div><div class="line"><span class="built_in">write</span>.<span class="built_in">write</span>(<span class="string">"hell,io\n"</span>);</div><div class="line"><span class="built_in">write</span>.<span class="built_in">write</span>(<span class="string">"welcome to study\n"</span>);</div><div class="line"><span class="built_in">write</span>.<span class="built_in">write</span>(<span class="string">"加油，谢谢！"</span>);</div><div class="line"><span class="built_in">write</span>.<span class="built_in">close</span>();</div></pre></td></tr></table></figure>
+<p>2.BufferedWriter类是带缓冲区的，比FileWriter要高效些，若写入的内容多优先使用此类，此类有一个newLine()方法，可换行。<br>下面程序为BufferedWriter类write(type c)方法的实现:</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//处理内容较多的数据是，用BufferedWriter更高效</span></div><div class="line">BufferedWriter bWrite=<span class="keyword">new</span> <span class="type">BufferedWriter</span>(<span class="keyword">new</span> <span class="type">FileWriter</span>(fileName));</div><div class="line">bWrite.write(<span class="string">"hell,io"</span>);</div><div class="line">bWrite.<span class="keyword">new</span><span class="type">Line</span>();</div><div class="line">bWrite.write(<span class="string">"welcome to study"</span>);</div><div class="line">bWrite.<span class="keyword">new</span><span class="type">Line</span>();</div><div class="line">bWrite.write(<span class="string">"加油，谢谢！"</span>);</div><div class="line">bWrite.close();</div></pre></td></tr></table></figure>
+<p>不论使用哪种方式，结束时都需要close()关闭流，否则会导致资源耗尽问题。<br><strong>(2).读文本文件</strong><br>1.FileReader类是从文本文件读取字符，下面代码为FileReader类读取文本文件的实现，返回的是一个int类型数。若读取到末尾，则返回-1，下面为具体的实现:</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">FileReader <span class="built_in">read</span>=<span class="keyword">new</span> FileReader(fileName);</div><div class="line"><span class="keyword">int</span> len=<span class="built_in">read</span>.<span class="built_in">read</span>();</div><div class="line"><span class="built_in">while</span>(len!=<span class="number">-1</span>)&#123;</div><div class="line">	System.out.<span class="built_in">println</span>(<span class="string">"len:"</span>+len);</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<p>2.BufferedReader类是文本文件读取的缓存器类，调用readLine()方法，可一行一行的读取出整行字符，若读取到末尾返回null,下面为具体的实现:</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">BufferedReader <span class="built_in">read</span>=<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> FileReader(fileName));</div><div class="line"><span class="keyword">String</span> <span class="built_in">line</span>=<span class="built_in">read</span>.readLine();</div><div class="line"><span class="built_in">while</span>(<span class="built_in">line</span>!=null)&#123;</div><div class="line">	System.out.<span class="built_in">println</span>(<span class="string">"line:"</span>+<span class="built_in">line</span>);</div><div class="line">	<span class="built_in">line</span>=<span class="built_in">read</span>.readLine();</div><div class="line">&#125;</div><div class="line"><span class="built_in">read</span>.<span class="built_in">close</span>();</div></pre></td></tr></table></figure>
+<p>同时不论使用哪种方式，结束时都需要调用close()关闭流，否则会导致资源耗尽问题.</p>
+<h3 id="五、读写二进制数据"><a href="#五、读写二进制数据" class="headerlink" title="五、读写二进制数据"></a>五、读写二进制数据</h3><p>对于纯文本文件里的内容都可解释为字符，可以用Reader和writer进行读写，但对于那些图片，声音的不是纯文本的内容，则需要利用二进制的字节方式进行读写，利用二进制字节读取数据要比字符快，且编码问题小。<br><strong>(1).写二进制字节数据</strong><br>FileOutputStream类:用于字节的输出；DataOutputStream类:用于将数据写到另一个输出流。下面为具体的实现:</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">DataOutputStream <span class="keyword">out</span> =<span class="keyword">new</span> DataOutputStream(<span class="keyword">new</span> FileOutputStream(fileName));</div><div class="line"><span class="keyword">out</span>.writeInt(<span class="number">1</span>);</div><div class="line"><span class="keyword">out</span>.writeDouble(<span class="number">11.20</span>);</div><div class="line"><span class="keyword">out</span>.writeUTF(<span class="string">"test"</span>);</div><div class="line"><span class="keyword">out</span>.close();</div></pre></td></tr></table></figure>
+<p><strong>(2).读二进制文件</strong></p>
+<p>通过另外一个流来构造一个过滤流，常用的子类有<br>DataInputStream 和 BufferedInputStream。后者是将字节数据读取到缓冲区.相对要高效些。下面为具体的实现:</p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">String</span> fileName=<span class="string">"d:\\demo.dat"</span>;</div><div class="line">DataInputStream <span class="keyword">in</span>=<span class="keyword">new</span><span class="type"></span>	DataInputStream(<span class="keyword">new</span> <span class="type">BufferedInputStream</span>(<span class="keyword">new</span> <span class="type">FileInputStream</span>(fileName)));</div><div class="line">System.out.println(<span class="keyword">in</span>.readInt()+<span class="string">"-"</span>+<span class="keyword">in</span>.readDouble()+<span class="string">"-"</span>+<span class="keyword">in</span>.readUTF());</div><div class="line"><span class="keyword">in</span>.close();</div></pre></td></tr></table></figure>
+<p>还有几个特殊的类,如:<br>LineNumberInputStream:构造一个读取指定的输入流的输入​​的新行号输入流。<br>PushbackInputStream:构建一个可预览一个字节或具有指定尺寸的缓冲区的流。<br>总结：本文主要分析了流的作用，流的分类，流的类图结构以及流的一些操作，比较基础，下篇将介绍流的文件管理，文档的压缩和对象序列化等操作。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+  
+  <div class="categories">
+    <a href="/categories/核心java/">核心java</a>
+  </div>
+
+        
+  
+  <div class="tags">
+    <a href="/tags/java/">java</a>
+  </div>
+
+<!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=3326447" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+ <nav id="pagination" >
+    
+    <a href="/2015/11/24/核心java系列——异常处理机制/" class="alignleft prev" >上一页</a>
+    
+    
+    <a href="/2015/11/20/核心java/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+
+
+<section id="comment">
+
+<!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"igreek"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.greekw.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/HTML5开发/">HTML5开发</a><small>1</small></li>
+  
+    <li><a href="/categories/SOA/">SOA</a><small>1</small></li>
+  
+    <li><a href="/categories/android开发/">android开发</a><small>5</small></li>
+  
+    <li><a href="/categories/git教程/">git教程</a><small>1</small></li>
+  
+    <li><a href="/categories/jdk源码阅读/">jdk源码阅读</a><small>1</small></li>
+  
+    <li><a href="/categories/maven教程/">maven教程</a><small>1</small></li>
+  
+    <li><a href="/categories/python开发/">python开发</a><small>8</small></li>
+  
+    <li><a href="/categories/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/categories/web开发/">web开发</a><small>3</small></li>
+  
+    <li><a href="/categories/前端插件/">前端插件</a><small>3</small></li>
+  
+    <li><a href="/categories/核心java/">核心java</a><small>8</small></li>
+  
+    <li><a href="/categories/移动开发/">移动开发</a><small>1</small></li>
+  
+    <li><a href="/categories/项目管理/">项目管理</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  <div class="widget tag">
+<h3 class="title">简介</h3>
+<ul class="entry">
+<li>本体：伍文长</li>
+<li>二次元：阿长小站</li>
+<li>主要工作:web/android/微信开发</li>
+<li>兴趣爱好:游泳，跑步，摄影，写作</a>
+<li>想交友的朋友请<a href="http://blog.greekw.com/about">猛戳我</a>！</li>
+<li>人生格言:我虽不是最优秀之人，但我会让自己变得更优秀。</li>
+<li>微信号：952049231</li>
+<li>微信公众号:igreeker</li>
+<font color="red">开发交流群：519782341</font>
+</ul>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=5&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=2046446075&verifier=a7222768&colors=ffffff,ffffff,666666,0082cb,ecfbfd&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">Links</h3>
+<ul class="entry">
+<li><a href="http://blog.csdn.net/w2cschool">我的CSDN</a></li>
+<li><a href="https://github.com/igreek" >我的github</a></li>
+<li><a href="https://www.zhihu.com/people/greekw" >我的知乎</a></li>
+</ul>
+</div
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><section>
+	@2015 阿长小站<a href="https://github.com/igreek">github</a>
+</section>
+<div class="clearfix"></div>
+</footer>
+  <script src="//libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
+
+
+
+<a href="https://github.com/igreek"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
