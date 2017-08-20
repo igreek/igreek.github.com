@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.greekw.com/"/>
-  <updated>2017-03-11T13:08:49.479Z</updated>
+  <updated>2017-08-20T15:13:17.641Z</updated>
   <id>http://blog.greekw.com/</id>
   
   <author>
@@ -14,6 +14,536 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员应该访问的最佳网站</title>
+    <link href="http://blog.greekw.com/2017/08/20/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%BA%94%E8%AF%A5%E8%AE%BF%E9%97%AE%E7%9A%84%E6%9C%80%E4%BD%B3%E7%BD%91%E7%AB%99/"/>
+    <id>http://blog.greekw.com/2017/08/20/程序员应该访问的最佳网站/</id>
+    <published>2017-08-19T16:00:00.000Z</published>
+    <updated>2017-08-20T15:13:17.641Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="程序员应该访问的最佳网站中文版原版"><a href="#程序员应该访问的最佳网站中文版原版" class="headerlink" title="程序员应该访问的最佳网站中文版原版"></a>程序员应该访问的最佳网站中文版<a href="https://github.com/sdmg15/Best-websites-a-programmer-should-visit" target="_blank" rel="external">原版</a></h1><p>一些对程序员有用的网站</p>
+<p>在学习CS的时候有一些你必须知道的有用的站点来获取通知为了你的技术储备和学习新知识。这里是一个你应该访问的不是非常全面的一些站点的列表，这个列表会不断更新，只要我能得到链接，你也可以通过添加你知道的来为此做出贡献</p>
+<a id="more"></a>
+<h3>Index</h3>
+
+<p>索引   </p>
+<ul>
+<li><a href="#when-you-get-stuck">当你遇到问题时</a></li>
+<li><a href="#news">新闻篇</a></li>
+<li><a href="#coding-practice-for-beginners">针对新手的代码训练</a></li>
+<li><a href="#for-those-who-want-to-start-a-small-project-but-cant-find-the-ideas">针对那些想开始一个小的项目但是无从下手的人</a></li>
+<li><a href="#general-coding-advice">通用编码建议</a></li>
+<li><a href="#coding-style">编码风格</a></li>
+<li><a href="#general-tools">通用工具</a></li>
+<li><a href="#interview-preparation">面试准备</a></li>
+<li><a href="#documentaries">纪录片</a></li>
+<li><a href="#moocs-for-learning-something-new">学习新知识-mooc</a></li>
+<li><a href="#sites-related-to-your-preferred-programming-language-for-me-java">与你首选的编程语言的站点(对我来说是java)</a></li>
+<li><a href="#learn-ai">AI学习</a></li>
+<li><a href="#seminar--research-writing--talks-etc">研讨会、研究性写作、会谈等</a></li>
+<li><a href="#everything-in-one-place">Reddit知识汇总</a></li>
+<li><a href="#youtube-channels">Youtube频道</a></li>
+<li><a href="#good-articles">好文章</a></li>
+<li><a href="#podcasts">播客</a></li>
+<li><a href="#building-a-simple-compilerinterpreter">构建一个简单的编译器/解释器</a></li>
+<li><a href="#tutorials">教程</a></li>
+<li><a href="#watch-others-code">欣赏他人的代码</a></li>
+<li><a href="#what-should-a-programmer-know">一个程序员应该知道的东西</a></li>
+<li><a href="#competitive-programming">编程比赛</a></li>
+<li><a href="#computer-books">计算机书籍</a></li>
+<li><a href="#video-tutorials">视频指南</a></li>
+<li><a href="#online-compiler-and-sharing-code-snippets">在线编译和共享代码片段</a></li>
+<li><a href="#blogs-of-developers">开发者博客</a></li>
+<li><a href="#for-improving-your-english">用来提高你的英语</a></li>
+<li><a href="#when-you-get-bored-from-cs-related-stuff">当你厌倦了CS相关的东西</a></li>
+</ul>
+<h1 id="when-you-get-stuck">当你遇到问题时</h1>
+
+<ul>
+<li><a href="http://stackoverflow.com/" target="_blank" rel="external">Stack Overflow</a>: 订阅他们的每周新闻和任何你感兴趣的主题</li>
+<li><a href="https://www.quora.com/" target="_blank" rel="external">Quora</a>: 一个共享知识和更好的理解世界的地方</li>
+<li><a href="https://learn-anything.xyz/" target="_blank" rel="external">Learn Anything</a>: 帮助你找到学习任何知识时的最佳路径</li>
+</ul>
+<h1 id="news">新闻篇</h1>
+
+<ul>
+<li><a href="https://news.ycombinator.com/" target="_blank" rel="external">Hacker News</a>: 针对程序员的新闻聚合，通过新闻稿获取头条新闻</li>
+<li><a href="http://www.hackernewsletter.com/" target="_blank" rel="external">Hacker Newsletter</a> : 手工编辑，周周更新</li>
+<li><a href="https://hndigest.com/" target="_blank" rel="external">Hacker News Digest</a> : 根据你想要的频率自动处理   </li>
+<li><a href="http://arstechnica.com/" target="_blank" rel="external">Ars Technica</a> : 发表的独特的精品文章</li>
+<li><a href="http://technews.acm.org/" target="_blank" rel="external">ACM TechNews</a></li>
+<li><a href="https://lobste.rs/" target="_blank" rel="external">Lobsters</a> : Lobsters是一个聚焦于技术的社区，主要是链接聚合和对话题进行讨论    </li>
+<li><a href="http://techcrunch.com/" target="_blank" rel="external">TechCrunch</a> : 一个科技新闻的站点</li>
+<li><a href="http://gsmarena.com/" target="_blank" rel="external">GSMArena.com</a> : 与最新的移动手机和andriod相关的新闻</li>
+<li><a href="https://www.producthunt.com/" target="_blank" rel="external">product hunt </a> : 寻找你最喜欢的东西</li>
+<li><a href="https://alternativeto.net" target="_blank" rel="external">AlternativeTo</a> : 软件推荐</li>
+<li><a href="https://betterdev.link" target="_blank" rel="external">Better Dev Links</a> : 帮助你成为更好的开发者</li>
+</ul>
+<h1 id="coding-practice-for-beginners">针对初学者的代码练习</h1>
+
+<ul>
+<li><a href="https://www.freecodecamp.com/" target="_blank" rel="external">freeCodeCamp</a> : 学习编码并且为非营利性组织构建项目。打造你的全栈开发技能</li>
+<li><a href="http://www.reddit.com/r/dailyprogrammer" target="_blank" rel="external">Reddit.com/r/dailyprogrammer</a> :  有趣的编程挑战，在这里你能学习其他人的编码，对于你解决不了的编码你能看看其他人是怎么解决的</li>
+<li><a href="http://programmingbydoing.com/" target="_blank" rel="external">Programming by Doing</a> : 编程进阶站点</li>
+<li><a href="http://codeabbey.com/" target="_blank" rel="external">CodeAbbey - 一个任何人都能精通编程的地方</a> : 从菜鸟到专家进阶之地</li>
+<li><a href="http://exercism.io/" target="_blank" rel="external">Exercism.io</a> : 用超过30种不同的语言解决实践问题，与其他人分享你的解决方案</li>
+<li><a href="http://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank" rel="external">Programming Tasks</a> : 小程序汇总</li>
+<li><a href="https://github.com/karan/Projects-Solutions" target="_blank" rel="external">karan/Projects-Solutions</a> 用不同语言实现的项目</li>
+<li><a href="http://lod-cloud.net/" target="_blank" rel="external">Lod - Cloud</a> : 开放数据云图</li>
+<li><a href="https://caveofprogramming.com/" target="_blank" rel="external">Cave of programming</a> : 学习编程，提升技巧</li>
+<li><a href="https://www.codecademy.com/" target="_blank" rel="external">Codeacademy</a> : 交互式编码学习，免费</li>
+</ul>
+<h1 id="for-those-who-want-to-start-a-small-project-but-cant-find-the-ideas">针对那些想开始一个小的项目但是无从下手的人</h1>
+
+<ul>
+<li><a href="http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/" target="_blank" rel="external">martyr2s-mega-project-ideas-list</a> : 包含125个项目，从初级到中级</li>
+<li><a href="https://github.com/karan/Projects" target="_blank" rel="external">karan/Projects</a> : 针对新手的小项目的汇总</li>
+<li><a href="http://rodiongork.tumblr.com/post/108155476418/wrong-big-projects-for-beginners" target="_blank" rel="external">Wrong “big projects” for beginners</a> : 怎样选择，从哪里开始</li>
+<li><a href="https://github.com/vicky002/1000_Projects" target="_blank" rel="external">vicky002/1000-Projects</a> : 一个能够用任何编程语言解决的巨型项目清单 </li>
+</ul>
+<h1 id="general-coding-advice">通用编码建议</h1>
+
+
+<ul>
+<li><a href="https://medium.freecodecamp.com/things-i-wish-someone-had-told-me-when-i-was-learning-how-to-code-565fc9dcb329#.y5wbd3pj6" target="_blank" rel="external">我希望在我一开始学习编码的时候就能得到的一些建议 — Free Code Camp</a></li>
+<li><a href="http://thecodist.com/article/lessons_from_a_lifetime_of_being_a_programmer" target="_blank" rel="external">一个程序员一生应遵循的原则</a></li>
+<li><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=331531" target="_blank" rel="external">良好的编程原则</a></li>
+<li><a href="http://matt.might.net/articles/what-cs-majors-should-know/" target="_blank" rel="external">在计算机科学专业应该知道什么</a></li>
+<li><a href="https://okepi.wordpress.com/2014/08/21/how-to-become-a-programmer-or-the-art-of-googling-well/" target="_blank" rel="external">如何成为一个程序员或谷歌搜索的艺术</a></li>
+<li><a href="http://kevinlondon.com/2015/05/05/code-review-best-practices.html" target="_blank" rel="external">代码审查最佳实践</a></li>
+<li><a href="https://stephenhaunts.com/2013/12/11/dieter-rams-10-principles-of-good-product-design/" target="_blank" rel="external">Dieter Rams : 好的产品设计的10个原则</a></li>
+<li><a href="https://stephenhaunts.files.wordpress.com/2014/04/10-ways-to-be-a-better-developer.png" target="_blank" rel="external">成为一名优秀开发者的10种方法</a></li>
+<li><a href="https://henrikwarne.com/2012/12/12/working-as-a-software-developer/" target="_blank" rel="external">软件开发者的工作</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Software_design_pattern" target="_blank" rel="external">软件设计模式</a> : 设计模式的汇总</li>
+<li><a href="https://sourcemaking.com/design_patterns" target="_blank" rel="external">设计模式</a> : 用例子详细说明设计模式</li>
+</ul>
+<h1 id="coding-style">编码风格</h1>
+
+<ul>
+<li><a href="http://stanford.edu/class/archive/cs/cs106b/cs106b.1158/styleguide.shtml" target="_blank" rel="external">CS 106B 编码风格指南</a> : 代码臃肿者必看  </li>
+<li><a href="https://google.github.io/styleguide/cppguide.html" target="_blank" rel="external">google C++ 编码风格</a>  </li>
+<li><a href="https://github.com/airbnb/javascript" target="_blank" rel="external">Airbnb JS 风格指南</a> : 写JavaScript最好的方式  </li>
+<li><a href="https://www.reddit.com/r/learnprogramming/comments/1i4ds4/what_are_some_bad_coding_habits_you_would/" target="_blank" rel="external">建议初学者避免使用的坏的编码习惯?</a>  </li>
+<li><a href="https://www.reddit.com/r/C_Programming/comments/1vuubw/good_c_programming_habits/" target="_blank" rel="external">优秀的 C 编码习惯 • /r/C_Programming</a>  </li>
+<li><a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html" target="_blank" rel="external">怎样高效的报告Bug</a>  </li>
+<li><a href="http://www.umich.edu/~eecs381/generalFAQ/Debugging.html" target="_blank" rel="external">调试问题</a>  </li>
+<li><a href="http://codebetter.com/" target="_blank" rel="external">你需要更好的代码!</a>  </li>
+<li><a href="https://github.com/open-source-society/computer-science" target="_blank" rel="external">在线CS课程目录</a>  </li>
+<li><a href="https://github.com/prakhar1989/awesome-courses" target="_blank" rel="external">CS课程目录(许多在线讲座)</a>  </li>
+</ul>
+<h1 id="general-tools">通用工具</h1>
+
+<h2 id="interview-preparation">面试准备</h2>
+
+<ul>
+<li><a href="http://www.geeksforgeeks.org/" target="_blank" rel="external">GeeksforGeeks | 针对geek的计算机科学入门</a> : 订阅他们获取新文章</li>
+<li><a href="http://www.techinterview.org/" target="_blank" rel="external">一个技术面试题，逻辑题等的站点</a> : 各种让你思考的东西</li>
+<li><a href="https://leetcode.com/problemset/algorithms/" target="_blank" rel="external">Problems | LeetCode OJ </a> : 针对面试的编码训练</li>
+<li><a href="http://www.programmerinterview.com/" target="_blank" rel="external">程序员和软件面试问答</a></li>
+<li><a href="https://www.reddit.com/user/ashish2199/m/puzzles" target="_blank" rel="external">Reddit.com/user/ashish2199/m/puzzles</a> : Reddit逻辑题</li>
+<li><a href="http://puzzles.nigelcoldwell.co.uk/" target="_blank" rel="external">逻辑题答案汇总</a></li>
+<li><a href="http://www.indiabix.com/" target="_blank" rel="external">资质问题与答案</a> : Quant and aptitude preparation</li>
+<li><a href="http://javahonk.com/category/interview/" target="_blank" rel="external">面试架构 - Java Honk</a></li>
+<li><a href="http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/" target="_blank" rel="external">面试10大算法</a></li>
+<li><a href="http://www.hiredintech.com/algorithm-design/" target="_blank" rel="external">算法设计流程</a></li>
+<li><a href="http://bigocheatsheet.com/#" target="_blank" rel="external">算法复杂度笔记</a></li>
+<li><a href="http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/" target="_blank" rel="external">unix／Linux笔记</a></li>
+<li><a href="http://kelukelu.me/interview/index.html" target="_blank" rel="external">怎样面试</a></li>
+<li><a href="http://www.palantir.com/2011/09/how-to-rock-an-algorithms-interview/" target="_blank" rel="external">怎样进行算法面试</a></li>
+<li><a href="http://gurmeet.net/puzzles/" target="_blank" rel="external">优秀的逻辑题</a></li>
+<li><a href="http://visualgo.net/" target="_blank" rel="external">通过动画可视化数据结构和算法</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/" target="_blank" rel="external">如何为技术面试做准备• /r/cscareerquestions</a></li>
+<li><a href="http://www.kchodorow.com/blog/2013/02/28/guide-to-tech-interviews/" target="_blank" rel="external">技术面试指南</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestions/comments/1b8wa3/why_you_make_less_money/" target="_blank" rel="external">为何你会赚钱少 • /r/cscareerquestions</a></li>
+<li><a href="http://placement-iit2013.blogspot.in/" target="_blank" rel="external">IIT Delhi实习经验</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestions/comments/209rkq/what_are_your_goto_questions_for_the_do_you_have/" target="_blank" rel="external">你的问题是什么?</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestions/comments/20ahfq/heres_a_pretty_big_list_of_programming_interview/" target="_blank" rel="external">/r/cscareerquestions</a> : 这是一个非常大的面试问题列表是我在为4大面试时用到的，我认为对大家也是有用的</li>
+<li><a href="https://blogs.janestreet.com/interviewing-at-jane-street/" target="_blank" rel="external">华尔街面试</a></li>
+<li><a href="http://se7so.blogspot.in/2014/01/how-to-prepare-for-interview-1.html" target="_blank" rel="external">怎样准备一个面试 - 1</a></li>
+<li><a href="eulercoder.me/blog/career/Summer-Internship-the-ultimate-guide">夏季实习：最终篇</a></li>
+<li><a href="http://www.datsi.fi.upm.es/~frosal/docs/25mdq.html" target="_blank" rel="external">25个最难的HR问题 </a></li>
+<li><a href="http://lifehacker.com/tag/job-interviews" target="_blank" rel="external">求职面试新闻、视频、评论和八卦 - Lifehacker </a></li>
+<li><a href="http://www.icsjobportal.com/blog/job-interview-questions/" target="_blank" rel="external">如何回答最棘手的40个面试问题| ICS Job Portal </a></li>
+<li><a href="http://jobsearch.about.com/od/interviewquestionsanswers/a/interviewquest.htm" target="_blank" rel="external">求职面试问题和最好的答案</a></li>
+<li><a href="http://www.artofmanliness.com/2016/01/05/tell-me-a-little-about-yourself/" target="_blank" rel="external">怎样进行自我介绍 | The Art of Manliness </a></li>
+<li><a href="http://www.artofmanliness.com/2012/08/06/how-to-ace-a-job-interview/" target="_blank" rel="external">工作面试：如何做好求职面试|展示个人魅力 </a></li>
+<li><a href="http://www.lifeclever.com/give-your-resume-a-face-lift/" target="_blank" rel="external">让你的简历改头换面</a></li>
+<li><a href="http://ssp.impulsetrain.com/big-o.html" target="_blank" rel="external">大家的误解</a></li>
+<li><a href="https://gist.github.com/dideler/2365607" target="_blank" rel="external">位操作技巧</a></li>
+<li><a href="http://javahonk.com/core-java-interview-questions/" target="_blank" rel="external">Java核心面试问题 - 每个主题的面试题 </a></li>
+<li><a href="http://adnjavainterview.blogspot.in" target="_blank" rel="external">Java面试问题与答案</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestions/comments/2lzc4h/big_collection_of_interview_preparation_links/" target="_blank" rel="external">面试准备时的链接的汇总 • /r/cscareerquestions </a></li>
+<li><a href="https://www.reddit.com/r/india/comments/1clgdj/unsolicited_advice_for_job_seekers_and_employers/" target="_blank" rel="external">为求职者和雇主提供的建议</a></li>
+<li><a href="https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions" target="_blank" rel="external">5个基本的电话面试问题 - steveyegge2 </a></li>
+<li><a href="http://web.stanford.edu/class/cs9/" target="_blank" rel="external">CS9: CS技术面试中的问题解决</a></li>
+<li><a href="https://github.com/mission-peace/interview/wiki" target="_blank" rel="external">Mission-peace/interview problems </a> : 一个大的编码面试的问题的汇总</li>
+<li><a href="http://stevestedman.com/wp-content/uploads/VennDiagram1.pdf" target="_blank" rel="external">使用韦恩图进行SQL连接</a></li>
+<li><a href="http://java67.blogspot.in/2013/04/10-frequently-asked-sql-query-interview-questions-answers-database.html" target="_blank" rel="external">10个最频繁的SQL查询面试问题</a></li>
+<li><a href="http://www.essentialsql.com/get-ready-to-learn-sql-database-normalization-explained-in-simple-english/" target="_blank" rel="external">准备学习SQL篇：用语言描述一下数据库规范化 - Essential SQL </a></li>
+<li><a href="http://www.cmi.ac.in/~madhavan/courses/pl2006/lecturenotes/lecture-notes/lecture-notes.html" target="_blank" rel="external">编程语言概念 课堂笔记 </a> :  面向对象概念和编程语言概念</li>
+<li><a href="http://www.hiredintech.com/app" target="_blank" rel="external">We Help Coders Get Hired</a> : 提供系统设计，面试策略，软件技能等的web站点</li>
+<li><a href="https://github.com/checkcheckzz/system-design-interview" target="_blank" rel="external">系统设计面试</a></li>
+<li><a href="http://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/" target="_blank" rel="external">如何进入科技企业-求职和面试指南</a>  </li>
+<li><a href="http://placementsindia.blogspot.in/" target="_blank" rel="external">新人面试</a></li>
+<li><a href="http://www.gowrikumar.com/c/index.php" target="_blank" rel="external">一些有趣的C问题 </a></li>
+<li><a href="http://www.techinterview.org/" target="_blank" rel="external">一个站点提供技术面试题，逻辑题或者你想的其他内容 </a></li>
+<li><a href="https://www.ocf.berkeley.edu/~wwu/riddles/hard.shtml" target="_blank" rel="external"> wu :: riddles(hard) </a> : 逻辑题</li>
+<li><a href="https://github.com/odino/interviews" target="_blank" rel="external">https://github.com/odino/interviews</a> : 面试重要问题列表</li>
+<li><a href="https://github.com/svozniuk/java-interviews" target="_blank" rel="external">svozniuk/java-interviews</a> : Java面试题</li>
+<li><a href="https://github.com/kimberli/interviews" target="_blank" rel="external">kimberli/interviews</a> : 面试学习表格</li>
+<li><a href="http://stackoverflow.com/questions/11094330/determining-the-big-o-runtimes-of-these-different-loops" target="_blank" rel="external">确定不同循环的时间复杂度?</a> :在stackoverflow上的一些好问题包括计算时间复杂度.</li>
+<li><a href="https://github.com/ChiperSoft/InterviewThis" target="_blank" rel="external">ChiperSoft/InterviewThis</a> : 在面试期间问到对公司的了解的问题</li>
+<li><a href="https://www.jitbit.com/news/181-jitbits-sql-interview-questions/" target="_blank" rel="external">SQL面试问题</a> : 好的SQL测试</li>
+</ul>
+<h1 id="documentaries">纪录片</h1>
+
+<ul>
+<li>机器改变世界 - 关于计算机历史的纪录片<ul>
+<li><a href="http://www.youtube.com/watch?v=rcR74y61xZk" target="_blank" rel="external">Part 1: 巨大的大脑 </a></li>
+<li><a href="http://www.youtube.com/watch?v=1APZ5-cjWfw" target="_blank" rel="external">Part 2: 发现未来</a></li>
+<li><a href="http://www.youtube.com/watch?v=zwC3gOudlAc" target="_blank" rel="external">Part 3: 台式计算机</a></li>
+<li><a href="http://www.youtube.com/watch?v=4gzpd0irP58" target="_blank" rel="external">Part 4: 机器的思考</a></li>
+<li><a href="http://www.youtube.com/watch?v=J_3A2jSnvHE" target="_blank" rel="external">Part 5: 指尖上的世界</a></li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/playlist?list=PLn-Y3vvQbmHO5WUcBdIWqiUfNawhC1cn3" target="_blank" rel="external">书呆子的胜利</a> : Play-list</li>
+<li><a href="https://www.youtube.com/watch?v=a-49a_CjH0M" target="_blank" rel="external">Project Code Rush - netscape/mozilla起源的纪录片</a></li>
+<li><a href="https://www.youtube.com/watch?v=XMm0HsmOTFI" target="_blank" rel="external">Linux的故事</a></li>
+<li><a href="https://www.youtube.com/watch?v=fxjElWL8igo" target="_blank" rel="external">Linux操作系统的故事 </a></li>
+<li><a href="https://www.youtube.com/watch?v=S23yie-779k" target="_blank" rel="external">Breaking the Code: Alan Turing传</a></li>
+<li><a href="https://www.youtube.com/watch?v=s1i-dnAH9Y4" target="_blank" rel="external">机械计算机(All Parts) </a> : 20世纪50年代的一个视频，说明了在没有现代电子的情况下机械计算机是如何工作的</li>
+<li><a href="https://www.youtube.com/playlist?list=PL_IlIlrxhtPMqW4b0-v8OgLvFZQes6SoZ" target="_blank" rel="external">Download: 互联网的真实故事</a> : 发现频道关于浏览器战争和互联网泡沫的记录</li>
+<li><a href="https://teachyourselfcs.com/" target="_blank" rel="external">自学计算机科学</a></li>
+<li><a href="https://www.youtube.com/watch?v=42KTvGYQYnA" target="_blank" rel="external">cpu如何执行程序(视频)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Mv2XQgpbTNE" target="_blank" rel="external">机器代码指令(视频)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iOq5kSKqeR4" target="_blank" rel="external">哈佛大学 CS50 - 渐进学习 (视频)</a></li>
+<li><a href="https://www.youtube.com/watch?v=4NIb9l3imAo" target="_blank" rel="external">攻破代码面试</a></li>
+<li><a href="https://www.youtube.com/watch?v=Eg5-tdAwclo" target="_blank" rel="external">攻破代码面试-全栈开发演讲者系列</a></li>
+<li><a href="https://www.youtube.com/watch?v=1fqxMuPmGak" target="_blank" rel="external">什么都能问 Gayle Laakmann McDowell (程序员面试宝典的作者)</a></li>
+</ul>
+<h1 id="moocs-for-learning-something-new">学习新知识-mooc</h1>
+
+<ul>
+<li><a href="https://www.class-central.com" target="_blank" rel="external">课程中心</a> : 超过10万名学生评价的目录</li>
+<li><a href="https://onlinecourses.nptel.ac.in/explorer/search?category=COMP_SCI_ENGG" target="_blank" rel="external">NPTEL Vidoes COMP_SCI_ENGG </a>  </li>
+<li><a href="http://coursera.org/" target="_blank" rel="external">Coursera.org</a></li>
+<li><a href="http://edx.org/" target="_blank" rel="external">edX</a></li>
+<li><a href="http://mooc.fi/english.html" target="_blank" rel="external">MOOC.fi</a> : 赫尔辛基大学在线课程</li>
+<li><a href="http://udacity.com/" target="_blank" rel="external">Udacity</a></li>
+<li><a href="https://www.kadenze.com/courses?subjects%5B%5D=7" target="_blank" rel="external">Kadenze | Creative Programming</a>: 注重艺术和创造力的编程课</li>
+<li><a href="https://www.youtube.com/user/UCBerkeley/videos" target="_blank" rel="external">UCBerkeley</a></li>
+<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank" rel="external">麻省理工学院电气工程和计算机科学</a>  </li>
+<li><a href="https://www.youtube.com/user/cs50tv/videos" target="_blank" rel="external">CS50</a></li>
+<li><a href="https://github.com/prakhar1989/awesome-courses/blob/master/README.md" target="_blank" rel="external">prakhar1989/awesome-CS-courses</a> : CS课程大汇总</li>
+<li><a href="https://docs.google.com/spreadsheets/d/1BD8BJJUNaX63m2QmySWMGDp71nx4W4MyyiIBlfMoN3Q/htmlview?sle=true#" target="_blank" rel="external">计算机科学资源 </a> : 针对自学者的mooc列表</li>
+<li><a href="https://github.com/prakhar1989/awesome-courses/blob/master/README.md" target="_blank" rel="external">https://github.com/prakhar1989/awesome-courses/blob/master/README.md </a> : 网上CS课程的收集</li>
+</ul>
+<h1 id="sites-related-to-your-preferred-programming-language-for-me-java">与你偏爱的编程语言相关的网站(对我来说是Java)</h1>
+
+<ul>
+<li><a href="http://javarevisited.blogspot.in/" target="_blank" rel="external">Java的过去</a> : 学好Java准备面试</li>
+<li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank" rel="external">The Java™ Tutorials  </a> : 最好的Java手册</li>
+<li><a href="http://www.artima.com/java/index.html" target="_blank" rel="external">Java Corner at Artima.com </a></li>
+<li><a href="http://www.cs.princeton.edu/~cos126/java_visualize/" target="_blank" rel="external">Java Visualizer </a> : 帮助将引用，值，变量可视化</li>
+<li><a href="http://www.cafeaulait.org/course/" target="_blank" rel="external">Java课程笔记 </a></li>
+<li><a href="http://chimera.labs.oreilly.com/books/1234000001805/index.html" target="_blank" rel="external">Learning Java </a> : 一个免费的在线学习Java语言的教材</li>
+<li><a href="http://www.artima.com/insidejvm/ed2/index.html" target="_blank" rel="external">免费在线的章节用来学习java虚拟机</a></li>
+<li><a href="http://www.cubrid.org/blog/dev-platform/understanding-jvm-internals/" target="_blank" rel="external">理解JVM</a></li>
+<li><a href="http://www.dynatrace.com/en/javabook/how-garbage-collection-works.html" target="_blank" rel="external">垃圾搜集如何工作</a>  </li>
+<li><a href="http://www.javaworld.com/" target="_blank" rel="external">Welcome to JavaWorld.com </a></li>
+<li><a href="http://www.cs.umd.edu/~pugh/java/memoryModel/" target="_blank" rel="external">Java内存模型</a></li>
+<li><a href="https://netbeans.org/project_downloads/usersguide/shortcuts-80.pdf" target="_blank" rel="external">Netbeans的键盘快捷键</a> : 键盘快捷键能够使你在工作时提高生产力</li>
+<li><a href="http://www.xyzws.com/javafaq/page/1" target="_blank" rel="external">XyzWs Java FAQs </a> : Java面试题汇总</li>
+<li><a href="http://www.docjar.com/" target="_blank" rel="external">搜索开源的Java API </a> : 浏览Java库的源代码，并且学习如何实现</li>
+<li><a href="http://www.journaldev.com/" target="_blank" rel="external">JournalDev - Java, Java EE, Android, Web Development Tutorials</a>  </li>
+<li><a href="https://github.com/sherxon/AlgoDS" target="_blank" rel="external">算法、数据结构、面试问题和答案的实现 </a></li>
+<li><a href="https://plumbr.eu/handbook/what-is-garbage-collection" target="_blank" rel="external">垃圾回收是什么</a> : 动态垃圾搜集</li>
+<li><a href="https://javahungry.blogspot.com/2014/02/best-books-for-learning-java-must-read.html" target="_blank" rel="external">学习java的最好的书</a> : Java基础</li>
+<li><a href="https://www.youtube.com/watch?v=StdfeXaKGEc&amp;list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&amp;index=25" target="_blank" rel="external">垃圾搜集(Java); 扩展数据结构 (视频)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLO9y7hOkmmSGTy5z6HZ-W4k2y8WXF7Bff" target="_blank" rel="external">编译器(视频)</a></li>
+<li><a href="https://www.infoq.com/presentations/garbage-collection-benefits" target="_blank" rel="external">深入Java：垃圾回收!</a></li>
+<li><a href="http://www.stroustrup.com/C++.html" target="_blank" rel="external">C++编程语言</a> : C++编程语言</li>
+<li><a href="http://www.stroustrup.com/bs_faq.html" target="_blank" rel="external">Bjarne Stroustrup’s FAQ</a> : The C++ FAQ</li>
+<li><a href="http://www.stroustrup.com/bs_faq2.html" target="_blank" rel="external">Bjarne Stroustrup’s C++风格和技术问答</a> : C++问答</li>
+<li><a href="http://www.stroustrup.com/C++11FAQ.html" target="_blank" rel="external">C++11 -新的ISO C++ 标准</a> : C++11问答</li>
+</ul>
+<h1 id="learn-ai">AI学习</h1>
+
+<ul>
+<li><a href="https://blog.openai.com/unsupervised-sentiment-neuron/" target="_blank" rel="external">无监督神经元</a></li>
+<li><a href="https://blog.openai.com/robots-that-learn/" target="_blank" rel="external">机器学习</a></li>
+<li><a href="https://grakn.ai/" target="_blank" rel="external">grakn.ai</a></li>
+</ul>
+<h1 id="seminar--research-writing--talks-etc">研讨会、研究性写作、会谈等</h1>
+
+<ul>
+<li><a href="http://www.cs.cmu.edu/~mleone/how-to.html" target="_blank" rel="external">关于研究和写作的建议</a></li>
+<li><a href="https://www.cse.iitb.ac.in/~ranade/communicationskills.html" target="_blank" rel="external">研讨会和报告</a></li>
+<li><a href="http://www.cse.iitd.ac.in/~srsarangi/articles.html" target="_blank" rel="external">博士论文</a></li>
+<li><a href="https://stephenhaunts.com/2015/10/02/practical-tips-for-talking-at-usergroups-and-conferences-part-1/" target="_blank" rel="external">在会议上讨论的实用技巧</a></li>
+<li><a href="https://stephenhaunts.com/2015/10/02/practical-tips-for-talking-at-usergroups-and-conferences-part-1/" target="_blank" rel="external">向非程序员展示软件项目</a></li>
+</ul>
+<h1 id="everything-in-one-place">Reddit知识汇总</h1>
+
+<ul>
+<li><a href="https://www.reddit.com/user/ashish2199/m/cs_student_subs" target="_blank" rel="external">reddit.com/user/ashish2199/m/cs_student_subs</a> : 在reddits中计算机科学和编程相关的主题</li>
+</ul>
+<h1 id="youtube-channels">youtube频道</h1>
+
+<ul>
+<li><a href="https://www.youtube.com/user/Computerphile/videos" target="_blank" rel="external">Computerphile </a> : 每个CS学生都应该看</li>
+<li><a href="https://www.youtube.com/user/ComputerHistory/videos" target="_blank" rel="external">ComputerHistory </a> : 针对那些想知道如何达成目标的人</li>
+<li><a href="https://www.youtube.com/user/GoogleTechTalks/videos" target="_blank" rel="external">GoogleTechTalks </a> : 关于热门话题的视频和在技术界的一些趣事</li>
+<li><a href="https://www.youtube.com/user/PlacementGrid/videos" target="_blank" rel="external">Placement Grid </a> : 面试及校园实习经验</li>
+<li><a href="https://www.youtube.com/user/GoogleDevelopers/videos" target="_blank" rel="external">Google Developers </a></li>
+<li><a href="https://www.youtube.com/user/FacebookDevelopers/videos" target="_blank" rel="external">Facebook Developers </a></li>
+<li><a href="https://www.youtube.com/user/OreillyMedia/videos" target="_blank" rel="external">O’Reilly </a> : 世界最佳技术作家访谈录</li>
+<li><a href="https://www.youtube.com/user/java/videos" target="_blank" rel="external">Java </a> : 有关Java的会谈</li>
+<li><a href="https://www.youtube.com/channel/UCdDhYMT2USoLdh4SZIsu_1g/videos" target="_blank" rel="external">JavaOne </a> : Java会议</li>
+<li><a href="https://www.youtube.com/user/CppCon/videos?shelf_id=0&amp;view=0&amp;sort=dd" target="_blank" rel="external">CppCon </a> : C++会议</li>
+<li><a href="https://www.youtube.com/user/MeetingCPP/videos" target="_blank" rel="external">Meeting C++ YT Kanalseite </a> : C++会议</li>
+<li><a href="https://www.youtube.com/user/ThinMatrix/videos" target="_blank" rel="external">ThinMatrix </a> : 开发者在java中使用OpenGL制作的一个3D游戏的博客和指南</li>
+<li><a href="https://www.youtube.com/user/technoparkcorp/videos" target="_blank" rel="external">yegor256 </a></li>
+<li><a href="http://www.aristeia.com/presentations.html" target="_blank" rel="external">Scott Meyers: Past Talks </a></li>
+<li><a href="https://www.youtube.com/user/ThoughtbotVideo/videos" target="_blank" rel="external">thoughtbot  </a> : 谈论各种话题</li>
+<li><a href="https://www.youtube.com/channel/UCU0Rt8VHO5-YNQXwIjkf-1g" target="_blank" rel="external">code::dive conference</a> : 诺基亚技术中心组织的会议</li>
+<li><a href="https://www.youtube.com/user/HowToBecomeTV/videos" target="_blank" rel="external">HowToBecomeTV </a> : 与技术界相关的开发人员的好的面试</li>
+<li><a href="https://www.youtube.com/user/itcuties/videos" target="_blank" rel="external">ITCuties </a></li>
+<li><a href="https://www.youtube.com/user/CodeBabes/videos" target="_blank" rel="external">CodeBabes</a> : 针对那些认为CS缺乏魅力的人</li>
+<li><a href="https://www.youtube.com/CodingBlocks" target="_blank" rel="external">Coding Blocks</a> : 指南，技巧</li>
+</ul>
+<h1 id="good-articles">好文章</h1>
+
+<ul>
+<li><a href="http://blog.thefirehoseproject.com/posts/expectations-of-a-junior-developer/" target="_blank" rel="external">初级开发者的想法</a></li>
+<li><a href="http://blog.thefirehoseproject.com/posts/learn-to-code-and-be-self-reliant/" target="_blank" rel="external">提升编码技巧的关键</a></li>
+<li><a href="https://stevewedig.com/2014/02/03/software-developers-reading-list/" target="_blank" rel="external">一位软件开发者的阅读列表</a> : 这是一些好书和链接</li>
+<li><a href="http://haseebq.com/how-to-break-into-tech-job-hunting-and-interviews/" target="_blank" rel="external">如何破解科技求职和面试</a></li>
+<li><a href="http://carlcheo.com/compsci" target="_blank" rel="external">白话40个关键的计算机科学概念</a></li>
+<li><a href="https://lwn.net/Articles/250967/" target="_blank" rel="external">每个程序员都应该了解的关于内存的内容</a></li>
+<li><a href="http://multithreaded.stitchfix.com/" target="_blank" rel="external">我们正在通过创新重塑零售业</a></li>
+<li><a href="https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/" target="_blank" rel="external">Unicode </a></li>
+<li><a href="http://kunststube.net/encoding/" target="_blank" rel="external">每个程序员都需要知道的关于在文本中设置编码和字符的内容</a></li>
+<li><a href="https://www.wikiwand.com/en/List_of_algorithms" target="_blank" rel="external">算法清单</a></li>
+<li><a href="https://www.wikiwand.com/en/Java_bytecode" target="_blank" rel="external">深入字节码</a></li>
+<li><a href="http://matt.might.net/articles/what-cs-majors-should-know/" target="_blank" rel="external">每种计算机科学专业应该知道什么 </a></li>
+<li><a href="https://teachyourselfcs.com/" target="_blank" rel="external">自学计算机科学</a></li>
+<li><a href="https://fkcd.ca/b7d.svg" target="_blank" rel="external">数据机构图</a></li>
+<li><a href="https://dev.to/vaidehijoshi/a-gentle-introduction-to-graph-theory" target="_blank" rel="external">关于图论的一个介绍</a></li>
+<li><a href="https://0xax.gitbooks.io/linux-insides/content/Booting/linux-bootstrap-1.html" target="_blank" rel="external">Linux Inside</a></li>
+<li><a href="http://moonscript.org/" target="_blank" rel="external">一个对程序员友好的语言</a></li>
+</ul>
+<h1 id="podcasts">播客</h1>
+
+<ul>
+<li><a href="http://www.codingblocks.net/" target="_blank" rel="external">Coding Blocks - 学习go的概念模式以及最佳实践</a></li>
+<li><a href="http://msdevshow.com/" target="_blank" rel="external">我的开发展示</a></li>
+<li><a href="http://cynicaldeveloper.com/" target="_blank" rel="external">孤独的开发者</a></li>
+<li><a href="http://herdingcode.com/" target="_blank" rel="external">Herding Code</a></li>
+<li><a href="http://www.codenewbie.org/" target="_blank" rel="external">Code Newbie</a></li>
+<li><a href="http://www.se-radio.net/" target="_blank" rel="external">软件工程师的无线电频道</a></li>
+<li><a href="https://devchat.tv/js-jabber" target="_blank" rel="external">javascript论坛</a></li>
+<li><a href="https://spec.fm/podcasts/developer-tea" target="_blank" rel="external">开发者茶话会</a> : 为开发者设计的播客</li>
+</ul>
+<h1 id="building-a-simple-compilerinterpreter">构建一个简单的编译器/解释器</h1>
+
+<ul>
+<li><a href="http://c9x.me/compile/bib/" target="_blank" rel="external">业余编译器开发者的资源</a></li>
+<li><a href="https://github.com/thejameskyle/the-super-tiny-compiler" target="_blank" rel="external">snowman：可能是有史以来最小的编译器</a></li>
+<li><a href="https://dev.to/fcpauldiaz/writing-my-first-compiler" target="_blank" rel="external">我开发的第一个编译器</a></li>
+<li><a href="https://sarabander.github.io/sicp/html/index.xhtml" target="_blank" rel="external">计算机程序的构造与解释</a></li>
+<li><a href="https://ruslanspivak.com/lsbasi-part1/" target="_blank" rel="external">一起开发一个简单的解释器。第一章</a></li>
+<li><a href="http://www.cs.dartmouth.edu/~mckeeman/cs48/mxcom/gem/html/GrowingCompiler.html" target="_blank" rel="external">编译器</a></li>
+</ul>
+<h1 id="tutorials">教程</h1>
+
+<ul>
+<li><a href="http://www.tutorialspoint.com/" target="_blank" rel="external">Tutorialspoint </a></li>
+<li><a href="http://www.w3schools.com/" target="_blank" rel="external">W3Schools在线Web教程</a></li>
+<li><a href="http://opendatastructures.org/" target="_blank" rel="external">Open Data Structures </a> : 用来学习数据结构和算法的优秀的资源提供了C++ , Java等各种语言的伪代码</li>
+<li><a href="http://oopweb.com/Algorithms/Documents/PLDS210/VolumeFrames.html" target="_blank" rel="external">Data Structures and Algorithms by John Morris </a> : 其他的优秀代码和对它的分析</li>
+<li><a href="http://cs.lmu.edu/~ray/classes/dsa/" target="_blank" rel="external">CMSI 281: Data Structures </a> : 针对数据结构的轻量级的说明</li>
+<li><a href="http://cs.fit.edu/~mmahoney/cse2050/how2cpp.html" target="_blank" rel="external">How to Program in C++  </a> : 怎样学习C++编程，关于学习C++的好资源</li>
+<li><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/" target="_blank" rel="external">TopCoder Tutorials </a></li>
+<li><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git/" target="_blank" rel="external">A Hacker’s Guide to Git </a> : 为那些想学习git的人打下坚实的基础</li>
+<li><a href="http://maryrosecook.com/blog/post/git-from-the-inside-out" target="_blank" rel="external">Git从入门到精通</a></li>
+<li><a href="http://freeengineer.org/learnUNIXin10minutes.html" target="_blank" rel="external">10分钟搞定UNIX</a></li>
+<li><a href="http://guide.bash.academy/" target="_blank" rel="external">The Bash Guide</a> : 学习Bash Shell的优秀教程</li>
+<li><a href="http://ryanstutorials.net/linuxtutorial/" target="_blank" rel="external">Linux Tutorial </a> : 学习Linux的好资源</li>
+<li><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/unixintro.html" target="_blank" rel="external">UNIX Tutorial - Introduction </a></li>
+<li><a href="http://www.ee.surrey.ac.uk/Teaching/Unix/" target="_blank" rel="external">针对新手的Linux教程</a></li>
+<li><a href="http://linuxcommand.org/learning_the_shell.php" target="_blank" rel="external">学习Shell</a></li>
+<li><a href="http://prismoskills.appspot.com/lessons/Dynamic_Programming/Chapter_01_-_Introduction.jsp" target="_blank" rel="external">Dynamic programming - PrismoSkills</a> : 学习如何解决动态规划问题</li>
+<li><a href="http://www.slideshare.net/olvemaudal/deep-c" target="_blank" rel="external">深入学习C语言</a> : very good presentation on C language</li>
+<li><a href="http://c-faq.com/index.html" target="_blank" rel="external">语言中最频繁遇到的问题</a></li>
+<li><a href="https://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/" target="_blank" rel="external">OS Course Notes </a> : Galvin’s书的章节笔记</li>
+<li><a href="http://www.cheat-sheets.org/sites/sql.su/" target="_blank" rel="external">SQL (Structured Query Language) in one page : SQL.SU </a> : 结构化查询语言，一个非常好的SQL记录表</li>
+<li><a href="http://www.le.ac.uk/users/rjm1/cotter/index.htm" target="_blank" rel="external">C编程说明</a></li>
+<li><a href="http://www.techotopia.com/index.php/MySQL_Essentials" target="_blank" rel="external">MySQL Essentials </a></li>
+<li><a href="http://www.mysqltutorial.org/" target="_blank" rel="external">http://www.mysqltutorial.org/ </a></li>
+<li><a href="http://duartes.org/gustavo/blog/best-of/" target="_blank" rel="external">Best Of - Gustavo Duarte  </a> : 包含各种主题的文章</li>
+<li><a href="http://overapi.com/" target="_blank" rel="external">Collecting all the cheat sheets </a> : 大量编程语言的接口表</li>
+<li><a href="http://www.chiark.greenend.org.uk/~sgtatham/cdescent/" target="_blank" rel="external">The Descent to C  </a> : 针对那些从高级编程语言像java或者python迁移到C的人</li>
+<li><a href="https://vimtutorplus.herokuapp.com/exercise/1" target="_blank" rel="external">VimTutor+ </a> : 从浏览器上学习VIM</li>
+<li><a href="https://learn.hackerearth.com/tutorials/" target="_blank" rel="external">HackerEarth Tutorials </a> : 一些数据结构和算法教程的资源</li>
+<li><a href="https://linuxjourney.com/" target="_blank" rel="external">Linux Journey </a> : 学习Linux的好的站点</li>
+<li><a href="http://www.cs.cf.ac.uk/Dave/C/CE.html" target="_blank" rel="external">C Programming </a></li>
+<li><a href="http://www.cs.cornell.edu/courses/cs2112/2015fa/lectures/index.html" target="_blank" rel="external">CS 2112/ENGRD 2112 Fall 2015 </a> : 数据结构和算法笔记</li>
+<li><a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="external">More about Github-flavored markdown</a></li>
+<li><a href="http://product.half.ebay.com/The-UNIX-Programming-Environment-by-Brian-W-Kernighan-and-Rob-Pike-1983-Other/54385&amp;tg=info" target="_blank" rel="external">Unix编程环境</a></li>
+<li><a href="https://www.amazon.com/dp/1593273894/" target="_blank" rel="external">Linux命令行：一个完整的说明</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated" target="_blank" rel="external">TCP/IP图解</a></li>
+<li><a href="https://www.amazon.com/gp/product/0596007124/" target="_blank" rel="external">设计模式</a></li>
+<li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612" target="_blank" rel="external">设计模式：可重用面向对象的软件的基础</a> : aka the “Gang Of Four” book, or GOF</li>
+<li><a href="https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057/" target="_blank" rel="external">UNIX和Linux系统管理员手册 第四版</a></li>
+<li><a href="https://dzone.com/" target="_blank" rel="external">从新手到专家-编程、web开发、DevOps新闻，教程和工具</a></li>
+</ul>
+<h1 id="watch-others-code">欣赏他人的代码</h1>
+
+<ul>
+<li><a href="https://www.liveedu.tv/" target="_blank" rel="external">LiveEdu.tv</a> : 构建应用，网站游戏等人的视频</li>
+</ul>
+<h1 id="what-should-a-programmer-know">一个程序员应该知道的东西</h1>
+
+<ul>
+<li><a href="http://sijinjoseph.com/programmer-competency-matrix/" target="_blank" rel="external">Programmer Competency Matrix  </a> : 一篇用来了解我们作为程序员的水平的文章</li>
+<li><a href="https://github.com/" target="_blank" rel="external">GitHub.com Build software better, together  </a> : 向其他人展示你的项目和与人协作的地方（为了更高效的使用它必须知道Git</li>
+<li><a href="https://gitlab.com" target="_blank" rel="external">Gitlab用来提供免费且无限制的私有库和不受限制的团队协作</a>.</li>
+</ul>
+<h1 id="competitive-programming">编程比赛</h1>
+
+<ul>
+<li><a href="http://hackerrank.com/" target="_blank" rel="external">HackerRank </a></li>
+<li><a href="http://codeforces.com/" target="_blank" rel="external">Codeforces </a></li>
+<li><a href="http://topcoder.com/" target="_blank" rel="external">topcoder </a></li>
+<li><a href="https://uva.onlinejudge.org" target="_blank" rel="external">UVa Online Judge </a> : 支持多种语言的数百个问题。</li>
+<li><a href="http://hackerearth.com/" target="_blank" rel="external">HackerEarth - Programming challenges and Developer jobs </a></li>
+<li><a href="http://codechef.com/" target="_blank" rel="external">CodeChef </a></li>
+<li><a href="http://poj.org/problemlist" target="_blank" rel="external">PKU ACM ICPC Practice problems </a></li>
+<li><a href="https://projecteuler.net/archives" target="_blank" rel="external">Archived Problems - Project Euler </a></li>
+<li><a href="https://code.google.com/codejam/contests.html" target="_blank" rel="external">Google Code Jam Practice and </a> : 之前比赛的练习题</li>
+<li><a href="http://www.spoj.com/" target="_blank" rel="external">Sphere Online Judge (SPOJ) </a></li>
+<li><a href="https://artofproblemsolving.com/" target="_blank" rel="external">Art of Problem Solving</a></li>
+<li><a href="https://www.riddles.io" target="_blank" rel="external">Riddles.io AI Games</a> : 与机器人比赛并获取积分</li>
+<li><a href="https://www.codingame.com" target="_blank" rel="external">Codingame</a> : 通过游戏和挑战学习编程</li>
+<li><a href="https://www.codewars.com/" target="_blank" rel="external">Codewars</a> : 根据完成的代码排名</li>
+</ul>
+<h1 id="computer-books">计算机书籍</h1>
+
+<ul>
+<li><a href="http://it-ebooks.info/" target="_blank" rel="external">IT eBooks - Free Download - Big Library  </a> : 无广告且能立即下载的电子书下载网站</li>
+<li><a href="https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md" target="_blank" rel="external">github.com/vhf/free-programming-books </a> : 超过500本免费电子书几乎包括你能想到的所有语言</li>
+<li><a href="http://www.sciencebooksonline.info/computer-science.html" target="_blank" rel="external">Computer Science Books Online </a> : 大约150本计算机方面的电子书</li>
+<li><a href="http://gatecse.in/wiki/Best_books_for_CSE#Best_Books_for_GATE_in_CSE" target="_blank" rel="external">Best books for GATE CSE </a></li>
+<li><a href="https://cses.fi/book.html" target="_blank" rel="external">https://cses.fi/book.html</a></li>
+<li><a href="gen.lib.rus.ec">Library Genesis</a> : 几乎包含你能想到的任何电子书，包含大量的CS文档和手册</li>
+</ul>
+<h1 id="video-tutorials">视频指南</h1>
+
+<ul>
+<li><a href="https://www.youtube.com/user/tusharroy2525/videos" target="_blank" rel="external">Tushar Roy </a> : 数据结构和算法教程</li>
+<li><a href="https://www.youtube.com/user/derekbanas/videos" target="_blank" rel="external">Derek Banas </a> : 高质量教程</li>
+<li><a href="https://www.youtube.com/user/thenewboston/videos" target="_blank" rel="external">thenewboston </a> : 与谈话内容相比有更多干货</li>
+<li><a href="https://www.youtube.com/user/mycodeschool/videos" target="_blank" rel="external">mycodeschool </a> : 数据结构和算法教程</li>
+<li><a href="https://www.youtube.com/channel/UCJYhP1lceSUc1bg0LRBUvqA/videos" target="_blank" rel="external">CodeGeek </a></li>
+<li><a href="https://www.youtube.com/user/CodingMadeEasy/videos" target="_blank" rel="external">CodingMadeEasy  </a> : C++教程</li>
+<li><a href="http://xda-university.com/" target="_blank" rel="external">XDA-University - Helping You Learn Android Development </a></li>
+<li><a href="https://www.youtube.com/user/DevTipsForDesigners/videos" target="_blank" rel="external">DevTips </a> : web开发教程</li>
+<li><a href="https://www.youtube.com/channel/UCJUmE61LxhbhudzUugHL2wQ/videos" target="_blank" rel="external">codedamn  </a> : 前端web开发教程</li>
+<li><a href="http://openclassroom.stanford.edu/MainFolder/CoursePage.php?course=IntroToAlgorithms" target="_blank" rel="external">算法设计和分析</a></li>
+<li><a href="http://derekwyatt.org/vim/tutorials/index.html" target="_blank" rel="external">Vim Tutorial Videos - Flarfnoogins </a> : 学习vim的优秀的视频教程</li>
+<li><a href="https://www.youtube.com/playlist?list=PL6B940F08B9773B9F" target="_blank" rel="external">CS1: Higher Computing - Richard Buckland UNSW </a> : 一个非常优秀的介绍CS的课程</li>
+<li><a href="https://www.youtube.com/channel/UC4DwZ2VXM2KWtzHjVk9M_xg/videos" target="_blank" rel="external">Kathryn Hodge </a> : 针对初学者的好的视频</li>
+</ul>
+<h1 id="online-compiler-and-sharing-code-snippets">在线编译和共享代码片段</h1>
+
+<ul>
+<li><a href="https://codepad.remoteinterview.io/" target="_blank" rel="external">CodePad</a> : 支持代码编写，测试和运行，支持超过25种语言</li>
+<li><a href="https://jsfiddle.net/" target="_blank" rel="external">JSFiddle</a> : 在线测试你的javascript，CSS，HTML或者CoffeeScript</li>
+<li><a href="https://ideone.com/" target="_blank" rel="external">Ideone.com </a></li>
+<li><a href="http://pastebin.com/" target="_blank" rel="external">Pastebin.com </a></li>
+<li><a href="https://godbolt.org/" target="_blank" rel="external">Godbolt.org </a>: 一款非常优秀的工具用来探索在不同编译器没有优化时的输出</li>
+</ul>
+<h1 id="blogs-of-developers">开发者博客</h1>
+
+<ul>
+<li><a href="http://blog.codinghorror.com/" target="_blank" rel="external">Coding Horror</a> : 一个最好的编程博客</li>
+<li><a href="http://http://www.wildml.com/" target="_blank" rel="external">WildMl</a> : 一个机器学习的博客</li>
+<li><a href="http://joelonsoftware.com/" target="_blank" rel="external">Joel on Software</a></li>
+<li><a href="https://stephenhaunts.com/" target="_blank" rel="external"> Stephen Haunts { Coding in the Trenches } </a></li>
+<li><a href="http://prog21.dadgum.com/" target="_blank" rel="external">在21世界编程</a></li>
+<li><a href="http://blog.cleancoder.com/" target="_blank" rel="external">Clean Coder Blog  </a> : 《代码整洁之道》一书作者的博客</li>
+<li><a href="http://www.yegor256.com/" target="_blank" rel="external">Programming Blog  </a> : Yegor Bugayenko的编程博客</li>
+<li><a href="https://10kloc.wordpress.com/" target="_blank" rel="external">10K-LOC </a></li>
+<li><a href="http://stevehanov.ca/blog/" target="_blank" rel="external">http://stevehanov.ca/blog/ </a></li>
+<li><a href="https://avidullu.wordpress.com/" target="_blank" rel="external">Geek Land </a></li>
+<li><a href="https://latedev.wordpress.com/" target="_blank" rel="external">Late Developer </a></li>
+<li><a href="http://rodiongork.tumblr.com/" target="_blank" rel="external">IT Enthusiast </a></li>
+<li><a href="http://matt.might.net/articles/" target="_blank" rel="external">blog.might.net </a></li>
+<li><a href="http://www.cseblog.com/" target="_blank" rel="external">CSE Blog - quant, math, computer science puzzles </a></li>
+<li><a href="https://www.nayuki.io/category/programming" target="_blank" rel="external">Small Programming Challenges and Puzzles</a></li>
+<li><a href="http://www.mytechinterviews.com/" target="_blank" rel="external">My Tech Interviews </a></li>
+<li><a href="http://blog.hackerearth.com/" target="_blank" rel="external">HackerEarth Blog </a></li>
+<li><a href="http://algo-geeks.blogspot.in/" target="_blank" rel="external">Algo-Geeks </a></li>
+<li><a href="http://www.codergears.com/Blog/" target="_blank" rel="external">CoderGears Blog Insights from </a> : the CoderGears Team</li>
+<li><a href="http://matt.might.net/articles/" target="_blank" rel="external">blog.might.net </a></li>
+<li><a href="https://tianrunhe.wordpress.com/" target="_blank" rel="external">Runhe Tian Coding Practice </a></li>
+<li><a href="http://www.paulgraham.com/articles.html" target="_blank" rel="external">Paul Graham Essays </a></li>
+<li><a href="http://dandreamsofcoding.com/" target="_blank" rel="external">Dan Dreams of Coding </a></li>
+<li><a href="http://code.antonio081014.com/" target="_blank" rel="external">Antonio081014’s Algorithms Codes </a></li>
+<li><a href="http://jeremykun.com/" target="_blank" rel="external">Math ∩ Programming</a></li>
+<li><a href="http://blog.takipi.com/" target="_blank" rel="external">Takipi Blog </a> : mainly focuses on Java and JVM languages</li>
+<li><a href="http://coding-geek.com/" target="_blank" rel="external">Coding Geek - A blog about IT, programming and Java </a></li>
+<li><a href="http://www.daedtech.com/" target="_blank" rel="external">Daedtech.com </a> : Stories about software</li>
+<li><a href="http://www.askamanager.org/archives" target="_blank" rel="external">Archives — Ask a Manager </a> : HR related stuff</li>
+</ul>
+<h1 id="for-improving-your-english">用来提高你的英语</h1>
+
+<ul>
+<li><a href="https://www.quia.com/shared/english/" target="_blank" rel="external">Quia - English </a></li>
+<li><a href="http://www.grammarbook.com/english_rules.asp" target="_blank" rel="external">标点符号和字母大小写规则</a></li>
+<li><a href="http://grammar.ccc.commnet.edu/grammar/" target="_blank" rel="external">语法和写作指南</a></li>
+<li><a href="https://owl.english.purdue.edu/" target="_blank" rel="external">Purdue大学在线写作实验室</a></li>
+<li><a href="https://www.englishclub.com/learn-english.htm" target="_blank" rel="external">Englishclub.com/learn-english</a></li>
+</ul>
+<h1 id="when-you-get-bored-from-cs-related-stuff">当你厌倦了CS相关的东西</h1>
+
+<ul>
+<li><a href="https://www.reddit.com/r/ProgrammerHumor/" target="_blank" rel="external">r/ProgrammerHumor</a> : reddit的子论坛致力于听</li>
+<li><a href="http://grammar.ccc.commnet.edu/grammar/" target="_blank" rel="external">Guide to Grammar and Writing</a> 针对那些想提高他们的英语技巧的人</li>
+<li><a href="https://www.youtube.com/user/Vsauce/videos" target="_blank" rel="external">Vsauce </a> : 最好的youtube频道</li>
+<li><a href="https://www.youtube.com/user/TEDtalksDirector/videos" target="_blank" rel="external">TED </a> : 关于技术，娱乐和设计的伟大演讲</li>
+<li><a href="https://www.youtube.com/user/crashcourse/videos" target="_blank" rel="external">CrashCourse </a> : 各种科目的小班课程</li>
+<li><a href="https://www.youtube.com/user/NationalGeographic/videos" target="_blank" rel="external">National Geographic </a> : 来自世界各地的高品质内容</li>
+<li><a href="https://www.youtube.com/user/barcroftmedia/featured" target="_blank" rel="external">Barcroft TV</a> : 构成世界的各种各样的人的短小的纪录片</li>
+<li><a href="https://www.youtube.com/user/coldfustion/videos" target="_blank" rel="external">ColdFusion </a> : 过去的当前的以及未来的技术</li>
+<li><a href="https://www.youtube.com/user/destinws2/videos" target="_blank" rel="external">SmarterEveryDay </a> : 用高速相机捕获的关于我们周围世界的大量的惊人的科学信息</li>
+<li><a href="https://www.youtube.com/user/scishow/videos" target="_blank" rel="external">SciShow </a> : 你总是想知道的一些有趣问题的答案</li>
+<li><a href="https://www.youtube.com/user/bigthink/videos" target="_blank" rel="external">Big Think</a> : 专家驱动，内容可选，专家从总统到演员</li>
+<li><a href="https://www.youtube.com/user/everyframeapainting/videos" target="_blank" rel="external">Every Frame a Painting </a> : 高质量的电影分析</li>
+<li><a href="https://www.youtube.com/user/TestTubeNetwork/videos" target="_blank" rel="external">TestTube News</a> : 来自全世界的有趣的新闻</li>
+<li><p><a href="http://reddit.com/" target="_blank" rel="external">Reddit the front page of the internet</a> : 适合有大把空闲时间的人</p>
+<p><strong><em>Maintained with :heart: by sdmg15 &amp; al</em></strong></p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;程序员应该访问的最佳网站中文版原版&quot;&gt;&lt;a href=&quot;#程序员应该访问的最佳网站中文版原版&quot; class=&quot;headerlink&quot; title=&quot;程序员应该访问的最佳网站中文版原版&quot;&gt;&lt;/a&gt;程序员应该访问的最佳网站中文版&lt;a href=&quot;https://github.com/sdmg15/Best-websites-a-programmer-should-visit&quot;&gt;原版&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;一些对程序员有用的网站&lt;/p&gt;
+&lt;p&gt;在学习CS的时候有一些你必须知道的有用的站点来获取通知为了你的技术储备和学习新知识。这里是一个你应该访问的不是非常全面的一些站点的列表，这个列表会不断更新，只要我能得到链接，你也可以通过添加你知道的来为此做出贡献&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="自我修炼" scheme="http://blog.greekw.com/categories/%E8%87%AA%E6%88%91%E4%BF%AE%E7%82%BC/"/>
+    
+    
+      <category term="自我修炼" scheme="http://blog.greekw.com/tags/%E8%87%AA%E6%88%91%E4%BF%AE%E7%82%BC/"/>
+    
+      <category term="技术管理" scheme="http://blog.greekw.com/tags/%E6%8A%80%E6%9C%AF%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>jdk源码阅读——ArrayList</title>
@@ -194,45 +724,6 @@
   </entry>
   
   <entry>
-    <title>核心java系列——异常处理机制</title>
-    <link href="http://blog.greekw.com/2015/11/24/%E6%A0%B8%E5%BF%83java%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
-    <id>http://blog.greekw.com/2015/11/24/核心java系列——异常处理机制/</id>
-    <published>2015-11-24T07:47:17.000Z</published>
-    <updated>2017-03-11T11:36:05.416Z</updated>
-    
-    <content type="html"><![CDATA[<p>异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。<br><a id="more"></a></p>
-<h3 id="一、什么是异常"><a href="#一、什么是异常" class="headerlink" title="一、什么是异常"></a><strong>一、什么是异常</strong></h3><blockquote>
-<p>异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。</p>
-</blockquote>
-<p>####（1）.异常分类<br>java语言中，定义了许多的异常类，所有异常类都派生Throwable类，而Throwable类又有两个子类Error和Exception，分别表示错误和异常，<br>其中Exception又分为运行时异常和非运行时异常。下面为异常的体系结构图：<br><img src="http://img.blog.csdn.net/20151124185612756" alt="这里写图片描述"></p>
-<p>####（2）.下面将详细说明图中相关异常的区别和联系<br><strong>1.Error和Exception</strong><br>  Error是程序无法处理的错误，通常有内存溢出异常(outofMemoryError)，线程终止等，出现这类异常java虚拟机会选择终止程序。<br> Exception是程序可处理的异常，它又有两个分支运行时异常和非运行时异常，出现这类异常是程序需要处理。<br><strong>2.运行时异常和非运行时异常</strong><br> 运行时异常都是RuntimeException类及其子类异常，如NullPointerException、 IndexOutOfBoundsException等，这些异常是不检查异常，程序中可以选择捕获处理，也可以不处理。这些异常一般是由程序逻辑错误引 起的，程序应该从逻辑角度尽可能避免这类异常的发生。<br> 非运行时异常是RuntimeException以外的异常，类型上都属于Exception类及其子类。从程序语法角度讲是必须进行处理的异常，<br>如果不处理，程序就不能编译通过。如IOException、SQLException等以及用户自定义的Exception异常。</p>
-<h4 id="3-什么时候抛出异常"><a href="#3-什么时候抛出异常" class="headerlink" title="(3).什么时候抛出异常"></a>(3).什么时候抛出异常</h4><p>如果遇到无法处理的问题时，该方法可以选择抛出异常，至于何时需要在方法中用throws声明异常，若该方法需要抛出多个异常，则每个异常间用逗号分隔，通常有以下情况需要抛出异常：<br>1.调用一个已抛出异常的方法，如FileInputStream构造器。<br>2.程序运行过程错误，并用throw抛出一个检查出的异常。<br>3.程序出现错误。<br>4.java虚拟机和运行时库出现的内部异常。<br>总之一个方法必须声明所有可能抛出的异常已检查异常，所有未检查出的异常要么不可控制，要么就应该避免发生。</p>
-<h4 id="4-创建异常"><a href="#4-创建异常" class="headerlink" title="(4).创建异常"></a>(4).创建异常</h4><p>创建异常通常只需要定义派生于Exception类或派生于Exception子类的类。例如定义一个派生于IOException的类，通常定义两个构造器，一个是默认构造器，一个是带有详细描述信息的构造器。如:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyExcetion</span> <span class="keyword">extends</span> <span class="title">IOException</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">1L</span>;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">()</span> </span>&#123;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(String message)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(message);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(Throwable cause)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(cause);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(String message, Throwable cause)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(message, cause);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="二、异常处理"><a href="#二、异常处理" class="headerlink" title="二、异常处理"></a><strong>二、异常处理</strong></h3><p>程序运行过程中，若出现异常没有及时处理，则会终止程序的执行。可以用捕获异常或抛出异常来处理。<br>若try语句代码块出现异常，程序会在catch中寻找匹配的异常，然后调用匹配的异常处理器进行处理。运行过程中程序未找到匹配的异常处理器，程序就会终止。<br><strong>(1).try…catch模式</strong><br>该模式的定义形式如下<br>try{<br>  代码块；<br>  }catch(Exception e){<br>  }<br>  Catch(Exception e2){ }</p>
-<p>匹配的原则是：如果抛出的异常对象属于catch子句的异常类，或者属于该异常类的子类，则认为生成的异常对象与catch块捕获的异常类型相匹。<br><strong>(2).try…catch…finally模式</strong><br>该模包含finally,无论程序有无异常发生，且不管try –catch间是否顺利执行，都会执行finally语句。<br><strong>(3).实例说明：</strong><br>1.各模块的作用<br>try块:用于捕获异常，后面可以跟一个或多个catch，finally可有可无，但必须有一个catch块。<br>catch块:用于处理异常。<br>finally块是程序是否有无异常，都需要执行的部分。<br>但在以下3中特殊情况下不会执行：<br>A．在finally 语句中发生异常。<br>B．程序所在线程死亡。<br>C．在前面的代码中出现了system.exit()退出程序。<br>2.当捕获到一个异常对象之后，你可以调用其getMessage()方法来获取异常消息，或者调用printStackTrace()方法来打印执行栈的内容<br>关于getMessage()方法<br>当你通过new Exception(“message”)或new RuntimeException(“message”)来创建一个异常对象的时候，传给构造方法的这个参数就是消息，所以，当你捕获到异常对象之后，可以通过getMessage()方法把消息拿出来！<br>关于printStackTrace()方法它能把执行栈的内容打印出来</p>
-<h3 id="三、异常的转换"><a href="#三、异常的转换" class="headerlink" title="三、异常的转换"></a><strong>三、异常的转换</strong></h3><p>所谓异常转换，即截获一个异常（往往是checked exception）之后，将其转换为另外一个异常（往往是unchecked exception）抛出。<br>比如很多情况下，当我们操作数据库的时候或操作文件的时候，JDK类库中的相关操作方法会给我们抛出SQLException或IOException，这些都是checked exception，这些异常一般情况下我们是无法进行处理的，所以，我们需要继续向上抛出异常，假如我们继续抛出SQLException或IOException的话，会导致更上层的程序处理起来非常困难（而且也需要在方法中进行声明）。<br>因此，大多数情况下，我们在截获到SQLException或IOException之后，会将它转换为一种RuntimeException重新抛出，这是非常常见的异常应用技巧！</p>
-<h3 id="四、异常链"><a href="#四、异常链" class="headerlink" title="四、异常链"></a><strong>四、异常链</strong></h3><p>所谓异常链，即当我们在截获一个异常，在把它转换为另外一个异常的时候，记得把原来那个异常对象设置到新的异常对象中即可。我们不妨观察Throwable类（所有异常类的基类）的构造方法:<br>public Throwable()<br>public Throwable(String message)<br>public Throwable(String message, Throwable cause)<br>public Throwable(Throwable cause)<br>我们注意到其中的Throwable类型的参数，它就是用来创建异常链的。<br>下面使用一个实例来说明:<br><strong>1.自定义异常类：</strong></p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyException</span> <span class="keyword"><span class="keyword">extends</span> <span class="type">RuntimeException</span></span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> final long serialVersionUID = <span class="number">1</span>L;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">String</span> errorCode;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> MyException() &#123;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> MyException(<span class="keyword">String</span> message,<span class="keyword">String</span> errorCode) &#123;</div><div class="line">		<span class="keyword">super</span>(message);</div><div class="line">		<span class="built_in">this</span>.errorCode=errorCode;</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//用于创建异常链</span></div><div class="line">	<span class="keyword">public</span> MyException(<span class="keyword">String</span> message,<span class="keyword">String</span> errorCode,Throwable cause) &#123;</div><div class="line">		<span class="keyword">super</span>(message, cause);</div><div class="line">		<span class="built_in">this</span>.errorCode=errorCode;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> <span class="keyword">String</span> getErrorCode() &#123;</div><div class="line">		<span class="keyword">return</span> errorCode;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>2.调用该类</strong></p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileUtils</span> </span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> readFile(<span class="keyword">String</span> filePath)&#123;</div><div class="line">		StringBuffer sb=<span class="keyword">new</span> <span class="type">StringBuffer</span>();</div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			BufferedReader reader=<span class="keyword">new</span> <span class="type">BufferedReader</span>(<span class="keyword">new</span> <span class="type">FileReader</span>(filePath));</div><div class="line">			<span class="keyword">String</span> line=<span class="literal">null</span>;</div><div class="line">			<span class="keyword">while</span>((line=reader.readLine())!=<span class="literal">null</span>)&#123;</div><div class="line">				sb.append(line);</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</div><div class="line">			<span class="comment">//将原始对象放到新对象中去</span></div><div class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="type">MyException</span>(<span class="string">"文件没有找到！"</span>, <span class="string">"1"</span>, e);</div><div class="line">		&#125; <span class="keyword">catch</span> (IOException e) &#123;</div><div class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="type">MyException</span>(<span class="string">"文件读取有误！"</span>, <span class="string">"2"</span>, e);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> sb.toString();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a><strong>五、注意事项</strong></h3><p>1)  必须在 try 之后添加 catch 或 finally 块。try 块后可同时接 catch 和 finally 块，但至少有一个块。<br>2) 必须遵循块顺序：若代码同时使用 catch 和 finally 块，则必须将 catch 块放在 try 块之后。<br>3) 一个 try 块可能有多个 catch 块。若如此，则执行第一个匹配块<br>即Java虚拟机会把实际抛出的异常对象依次和各个catch代码块声明的异常类型匹配，如果异常对象为某个异常类型或其子类的实例，就执行这个catch代码块，不会再执行其他的 catch代码块。<br>4) 可嵌套 try-catch-finally 结构。<br>5) 在 try-catch-finally 结构中，可重新抛出异常。<br>6)多个catch的顺序一定要遵循子类在上父类在下的规则。<br>7)一个方法被重写，被重写的方法必须抛出相同的异常或异常的子类。<br>8)若父类方法抛出多个异常，那子类重写该方法必须抛出哪些异常的一个子集。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="核心java" scheme="http://blog.greekw.com/categories/%E6%A0%B8%E5%BF%83java/"/>
-    
-    
-      <category term="java" scheme="http://blog.greekw.com/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>核心java系列——I/O流详解（一）</title>
     <link href="http://blog.greekw.com/2015/11/24/%E6%A0%B8%E5%BF%83java%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94I-O%E6%B5%81%E8%AF%A6%E8%A7%A3(%E4%B8%80)/"/>
     <id>http://blog.greekw.com/2015/11/24/核心java系列——I-O流详解(一)/</id>
@@ -279,6 +770,45 @@
     <summary type="html">
     
       &lt;p&gt;流的概念流是一系列有顺序的字节的集合，是网络传输的载体，流可以包装成基本数据类型或对象，流有输入和输出，输入时是从流从数据源流向程序输出时是流从程序传向数据源，而数据源可以是内存，文件，网络或程序等。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="核心java" scheme="http://blog.greekw.com/categories/%E6%A0%B8%E5%BF%83java/"/>
+    
+    
+      <category term="java" scheme="http://blog.greekw.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>核心java系列——异常处理机制</title>
+    <link href="http://blog.greekw.com/2015/11/24/%E6%A0%B8%E5%BF%83java%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
+    <id>http://blog.greekw.com/2015/11/24/核心java系列——异常处理机制/</id>
+    <published>2015-11-24T07:47:17.000Z</published>
+    <updated>2017-03-11T11:36:05.416Z</updated>
+    
+    <content type="html"><![CDATA[<p>异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。<br><a id="more"></a></p>
+<h3 id="一、什么是异常"><a href="#一、什么是异常" class="headerlink" title="一、什么是异常"></a><strong>一、什么是异常</strong></h3><blockquote>
+<p>异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。</p>
+</blockquote>
+<p>####（1）.异常分类<br>java语言中，定义了许多的异常类，所有异常类都派生Throwable类，而Throwable类又有两个子类Error和Exception，分别表示错误和异常，<br>其中Exception又分为运行时异常和非运行时异常。下面为异常的体系结构图：<br><img src="http://img.blog.csdn.net/20151124185612756" alt="这里写图片描述"></p>
+<p>####（2）.下面将详细说明图中相关异常的区别和联系<br><strong>1.Error和Exception</strong><br>  Error是程序无法处理的错误，通常有内存溢出异常(outofMemoryError)，线程终止等，出现这类异常java虚拟机会选择终止程序。<br> Exception是程序可处理的异常，它又有两个分支运行时异常和非运行时异常，出现这类异常是程序需要处理。<br><strong>2.运行时异常和非运行时异常</strong><br> 运行时异常都是RuntimeException类及其子类异常，如NullPointerException、 IndexOutOfBoundsException等，这些异常是不检查异常，程序中可以选择捕获处理，也可以不处理。这些异常一般是由程序逻辑错误引 起的，程序应该从逻辑角度尽可能避免这类异常的发生。<br> 非运行时异常是RuntimeException以外的异常，类型上都属于Exception类及其子类。从程序语法角度讲是必须进行处理的异常，<br>如果不处理，程序就不能编译通过。如IOException、SQLException等以及用户自定义的Exception异常。</p>
+<h4 id="3-什么时候抛出异常"><a href="#3-什么时候抛出异常" class="headerlink" title="(3).什么时候抛出异常"></a>(3).什么时候抛出异常</h4><p>如果遇到无法处理的问题时，该方法可以选择抛出异常，至于何时需要在方法中用throws声明异常，若该方法需要抛出多个异常，则每个异常间用逗号分隔，通常有以下情况需要抛出异常：<br>1.调用一个已抛出异常的方法，如FileInputStream构造器。<br>2.程序运行过程错误，并用throw抛出一个检查出的异常。<br>3.程序出现错误。<br>4.java虚拟机和运行时库出现的内部异常。<br>总之一个方法必须声明所有可能抛出的异常已检查异常，所有未检查出的异常要么不可控制，要么就应该避免发生。</p>
+<h4 id="4-创建异常"><a href="#4-创建异常" class="headerlink" title="(4).创建异常"></a>(4).创建异常</h4><p>创建异常通常只需要定义派生于Exception类或派生于Exception子类的类。例如定义一个派生于IOException的类，通常定义两个构造器，一个是默认构造器，一个是带有详细描述信息的构造器。如:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyExcetion</span> <span class="keyword">extends</span> <span class="title">IOException</span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">1L</span>;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">()</span> </span>&#123;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(String message)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(message);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(Throwable cause)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(cause);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyExcetion</span><span class="params">(String message, Throwable cause)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>(message, cause);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="二、异常处理"><a href="#二、异常处理" class="headerlink" title="二、异常处理"></a><strong>二、异常处理</strong></h3><p>程序运行过程中，若出现异常没有及时处理，则会终止程序的执行。可以用捕获异常或抛出异常来处理。<br>若try语句代码块出现异常，程序会在catch中寻找匹配的异常，然后调用匹配的异常处理器进行处理。运行过程中程序未找到匹配的异常处理器，程序就会终止。<br><strong>(1).try…catch模式</strong><br>该模式的定义形式如下<br>try{<br>  代码块；<br>  }catch(Exception e){<br>  }<br>  Catch(Exception e2){ }</p>
+<p>匹配的原则是：如果抛出的异常对象属于catch子句的异常类，或者属于该异常类的子类，则认为生成的异常对象与catch块捕获的异常类型相匹。<br><strong>(2).try…catch…finally模式</strong><br>该模包含finally,无论程序有无异常发生，且不管try –catch间是否顺利执行，都会执行finally语句。<br><strong>(3).实例说明：</strong><br>1.各模块的作用<br>try块:用于捕获异常，后面可以跟一个或多个catch，finally可有可无，但必须有一个catch块。<br>catch块:用于处理异常。<br>finally块是程序是否有无异常，都需要执行的部分。<br>但在以下3中特殊情况下不会执行：<br>A．在finally 语句中发生异常。<br>B．程序所在线程死亡。<br>C．在前面的代码中出现了system.exit()退出程序。<br>2.当捕获到一个异常对象之后，你可以调用其getMessage()方法来获取异常消息，或者调用printStackTrace()方法来打印执行栈的内容<br>关于getMessage()方法<br>当你通过new Exception(“message”)或new RuntimeException(“message”)来创建一个异常对象的时候，传给构造方法的这个参数就是消息，所以，当你捕获到异常对象之后，可以通过getMessage()方法把消息拿出来！<br>关于printStackTrace()方法它能把执行栈的内容打印出来</p>
+<h3 id="三、异常的转换"><a href="#三、异常的转换" class="headerlink" title="三、异常的转换"></a><strong>三、异常的转换</strong></h3><p>所谓异常转换，即截获一个异常（往往是checked exception）之后，将其转换为另外一个异常（往往是unchecked exception）抛出。<br>比如很多情况下，当我们操作数据库的时候或操作文件的时候，JDK类库中的相关操作方法会给我们抛出SQLException或IOException，这些都是checked exception，这些异常一般情况下我们是无法进行处理的，所以，我们需要继续向上抛出异常，假如我们继续抛出SQLException或IOException的话，会导致更上层的程序处理起来非常困难（而且也需要在方法中进行声明）。<br>因此，大多数情况下，我们在截获到SQLException或IOException之后，会将它转换为一种RuntimeException重新抛出，这是非常常见的异常应用技巧！</p>
+<h3 id="四、异常链"><a href="#四、异常链" class="headerlink" title="四、异常链"></a><strong>四、异常链</strong></h3><p>所谓异常链，即当我们在截获一个异常，在把它转换为另外一个异常的时候，记得把原来那个异常对象设置到新的异常对象中即可。我们不妨观察Throwable类（所有异常类的基类）的构造方法:<br>public Throwable()<br>public Throwable(String message)<br>public Throwable(String message, Throwable cause)<br>public Throwable(Throwable cause)<br>我们注意到其中的Throwable类型的参数，它就是用来创建异常链的。<br>下面使用一个实例来说明:<br><strong>1.自定义异常类：</strong></p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyException</span> <span class="keyword"><span class="keyword">extends</span> <span class="type">RuntimeException</span></span> </span>&#123;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> final long serialVersionUID = <span class="number">1</span>L;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">String</span> errorCode;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> MyException() &#123;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> MyException(<span class="keyword">String</span> message,<span class="keyword">String</span> errorCode) &#123;</div><div class="line">		<span class="keyword">super</span>(message);</div><div class="line">		<span class="built_in">this</span>.errorCode=errorCode;</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//用于创建异常链</span></div><div class="line">	<span class="keyword">public</span> MyException(<span class="keyword">String</span> message,<span class="keyword">String</span> errorCode,Throwable cause) &#123;</div><div class="line">		<span class="keyword">super</span>(message, cause);</div><div class="line">		<span class="built_in">this</span>.errorCode=errorCode;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">public</span> <span class="keyword">String</span> getErrorCode() &#123;</div><div class="line">		<span class="keyword">return</span> errorCode;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>2.调用该类</strong></p>
+<figure class="highlight haxe"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FileUtils</span> </span>&#123;</div><div class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">String</span> readFile(<span class="keyword">String</span> filePath)&#123;</div><div class="line">		StringBuffer sb=<span class="keyword">new</span> <span class="type">StringBuffer</span>();</div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			BufferedReader reader=<span class="keyword">new</span> <span class="type">BufferedReader</span>(<span class="keyword">new</span> <span class="type">FileReader</span>(filePath));</div><div class="line">			<span class="keyword">String</span> line=<span class="literal">null</span>;</div><div class="line">			<span class="keyword">while</span>((line=reader.readLine())!=<span class="literal">null</span>)&#123;</div><div class="line">				sb.append(line);</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</div><div class="line">			<span class="comment">//将原始对象放到新对象中去</span></div><div class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="type">MyException</span>(<span class="string">"文件没有找到！"</span>, <span class="string">"1"</span>, e);</div><div class="line">		&#125; <span class="keyword">catch</span> (IOException e) &#123;</div><div class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> <span class="type">MyException</span>(<span class="string">"文件读取有误！"</span>, <span class="string">"2"</span>, e);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> sb.toString();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="五、注意事项"><a href="#五、注意事项" class="headerlink" title="五、注意事项"></a><strong>五、注意事项</strong></h3><p>1)  必须在 try 之后添加 catch 或 finally 块。try 块后可同时接 catch 和 finally 块，但至少有一个块。<br>2) 必须遵循块顺序：若代码同时使用 catch 和 finally 块，则必须将 catch 块放在 try 块之后。<br>3) 一个 try 块可能有多个 catch 块。若如此，则执行第一个匹配块<br>即Java虚拟机会把实际抛出的异常对象依次和各个catch代码块声明的异常类型匹配，如果异常对象为某个异常类型或其子类的实例，就执行这个catch代码块，不会再执行其他的 catch代码块。<br>4) 可嵌套 try-catch-finally 结构。<br>5) 在 try-catch-finally 结构中，可重新抛出异常。<br>6)多个catch的顺序一定要遵循子类在上父类在下的规则。<br>7)一个方法被重写，被重写的方法必须抛出相同的异常或异常的子类。<br>8)若父类方法抛出多个异常，那子类重写该方法必须抛出哪些异常的一个子集。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;异常是程序中一种错误，可能是读取文件错误，网络连接错误，也可能是数组越界错误，或试图使用一个没有被赋值的对象而引起的错误。如果由于异常或错误使程序操作没有操作完成，则程序返回一个安全状态或捕获异常的处理结果，保证程序的健壮性。&lt;br&gt;
     
     </summary>
     
@@ -580,6 +1110,97 @@ Swiper 是一款免费以及轻量级的移动设备触控滑块的js框架，�
   </entry>
   
   <entry>
+    <title>python基础详解</title>
+    <link href="http://blog.greekw.com/2015/10/22/python%E5%9F%BA%E7%A1%80%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://blog.greekw.com/2015/10/22/python基础详解/</id>
+    <published>2015-10-22T07:47:17.000Z</published>
+    <updated>2017-03-11T11:36:05.401Z</updated>
+    
+    <content type="html"><![CDATA[<p>Python是一种简单易学，功能强大的编程语言，它有高效率的高层数据结构，能简单而有效地实现面向对象编程。Python简洁的语法和对动态输入的支持，再加上解释性语言的本质，使得它在大多数平台上的很多领域都是一个理想的脚本语言，特别适用于快速的应用程序开发。<br><a id="more"></a></p>
+<h2 id="一、语句和语法"><a href="#一、语句和语法" class="headerlink" title="一、语句和语法"></a>一、语句和语法</h2><pre><code>python具有一些基本的规则和特殊字符，说明如下：
+#:用于注释内容
+\n:用于分隔符
+\:继续上一行
+如 if(A==1) and \
+        (B==2):
+                return    
+
+特殊情况为:&apos;&apos;&apos;(三引号下的内容可跨行) 2.给一些变量赋值
+
+;将两个语句连接在一行中  
+如:import sys;x=&apos;foo&apos; sys.stdout.write(x) 此方式不提倡
+
+:将代码块的头和体分开
+缩进相同的一组语句构成代码块，如if while def class等 以(:)结束 ，则该行后的一行或多行称为代码组
+代码块(语句):用缩进的方式体现
+py文件是以模块的方式组织
+每一个python脚本可以称为一个模块，以文件的方式存储。模块的中内容可以是可直接执行脚本，一些类库函数 或被导入的调用
+</code></pre><h2 id="二、变量"><a href="#二、变量" class="headerlink" title="二、变量"></a>二、变量</h2><pre><code>    (1)赋值操作(注意pyton赋值不是将一个值赋给另一个变量 而是将该对象的引用赋值给变量)   
+            如 aList=[1,2,3,&apos;abc&apos;,23.44] aStr=&apos;hello&apos;        
+    (2)增量操作
+            等号和一个算术操作符构成一个增量操作符 如x+=1  -= %= **= 
+            但python不支持类似x++ 或x--等自增或自减
+    (3)多重赋值
+       如x=y=z=1
+       另一种为将多个变量同时赋值.如 x,y,z=1,3,&apos;abc&apos;
+       交换两个变量的赋值可以通过多元赋值实现
+       如:x,y=1,2
+       x,y=y,x
+
+**标识符**
+标识符是有效字符串的集合 其中有一部分构成保留字 不能用于其他用途
+pyhon标识符规则:
+ 1.第一个字符必须是字母或下划线
+ 2.其他字符需是字母，下划线或数字组成
+ 3.大小写敏感
+(2)关键字
+(3)内建
+(4)专用下划线标识符
+    python可以用下划线作为变量的前缀或后缀指定特殊变量符，说明如下
+    1._xxx 不要from module import * 导入
+    2._XXX_ 系统定义的名字
+    3._xxx 类中的私有变量 在模块或类外不可以使用
+</code></pre><h2 id="三、编程风格"><a href="#三、编程风格" class="headerlink" title="三、编程风格"></a>三、编程风格</h2><pre><code>    1.注释
+    2.文档
+     python 提供了一种机制，可以用_doc_特殊变量 动态获取文档内容 ，在类 模块或函数声明中第一个没有赋值的字符串可用属性obj._doc_来访问
+    3.缩进
+(2).模块的结构和布局
+    用模块组织python的代码 将其应用到每一个文件，如
+    1.起始行
+    2.模块文档
+        说明模块的功能和全局变量的含义。可以通过module._doc_访问
+    3.模块导入
+    4.变量定义
+        次变量定义为全局变量，在本模块的所有函数都可以使用，但通常使用局部变量代替全局变量
+    5.类定义 (类的文档变量是class._doc_)
+    6.函数定义(函数的文档变量是function._doc_)
+    7.主程序
+        无论是被导入的模块还是作为直接执行的脚本，此部分都会执行，是根据执行模式调用不同的函数
+        python可以用如下方式检测该模块是被导入的模块还是被直接执行
+        A.若模块是被导入，__name__的值为模块的名字
+        B.若模块是直接执行,__name__的值为__main__
+</code></pre><h2 id="四、内存管理"><a href="#四、内存管理" class="headerlink" title="四、内存管理"></a>四、内存管理</h2><pre><code>变量无须事先声明
+变量无须指定类型
+不需要关心内存回收
+del语句可直接释放资源
+</code></pre><h2 id="五、入门例子"><a href="#五、入门例子" class="headerlink" title="五、入门例子"></a>五、入门例子</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env <span class="keyword">python</span></div><div class="line"></div><div class="line"><span class="string">'makeTextFile.py -- create text file'</span></div><div class="line"></div><div class="line">import os</div><div class="line"></div><div class="line"># <span class="built_in">get</span> filename</div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line">    <span class="keyword">if</span> os.path.<span class="built_in">exists</span>(fname):</div><div class="line">        <span class="keyword">print</span><span class="string">"*** ERROR: '%s' already exists"</span> % fname</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">break</span></div><div class="line"></div><div class="line"># <span class="built_in">get</span> <span class="keyword">file</span> content (text) lines</div><div class="line"><span class="keyword">all</span> = []</div><div class="line"><span class="keyword">print</span> <span class="string">"\nEnter lines ('.' by itself to quit).\n"</span></div><div class="line"></div><div class="line"># loop until user terminates <span class="built_in">input</span></div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    entry = raw_input(<span class="string">'&gt; '</span>)</div><div class="line">    <span class="keyword">if</span> entry == <span class="string">'.'</span>:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">all</span>.<span class="keyword">append</span>(entry)</div><div class="line"></div><div class="line"># <span class="keyword">write</span> lines <span class="keyword">to</span> <span class="keyword">file</span> with NEWLINE <span class="built_in">line</span> terminator</div><div class="line">fobj = <span class="keyword">open</span>(fname, <span class="string">'w'</span>)</div><div class="line">fobj.<span class="keyword">write</span>(<span class="string">'\n'</span>.<span class="keyword">join</span>(<span class="keyword">all</span>))</div><div class="line">fobj.<span class="keyword">close</span>()</div><div class="line"><span class="keyword">print</span> <span class="string">'DONE!'</span></div></pre></td></tr></table></figure>
+<h2 id="六、相关的模块和开发工具"><a href="#六、相关的模块和开发工具" class="headerlink" title="六、相关的模块和开发工具"></a>六、相关的模块和开发工具</h2><p>调试器:pdb<br>记录器:logging<br>性能测试器:profile hotshot </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Python是一种简单易学，功能强大的编程语言，它有高效率的高层数据结构，能简单而有效地实现面向对象编程。Python简洁的语法和对动态输入的支持，再加上解释性语言的本质，使得它在大多数平台上的很多领域都是一个理想的脚本语言，特别适用于快速的应用程序开发。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="python开发" scheme="http://blog.greekw.com/categories/python%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="python" scheme="http://blog.greekw.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>主流HTML5游戏开发引擎的分析和对比</title>
     <link href="http://blog.greekw.com/2015/10/22/%E4%B8%BB%E6%B5%81HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E5%BC%95%E6%93%8E%E7%9A%84%E5%88%86%E6%9E%90%E5%92%8C%E5%AF%B9%E6%AF%94/"/>
     <id>http://blog.greekw.com/2015/10/22/主流HTML5游戏开发引擎的分析和对比/</id>
@@ -714,97 +1335,6 @@ Swiper 是一款免费以及轻量级的移动设备触控滑块的js框架，�
   </entry>
   
   <entry>
-    <title>python基础详解</title>
-    <link href="http://blog.greekw.com/2015/10/22/python%E5%9F%BA%E7%A1%80%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://blog.greekw.com/2015/10/22/python基础详解/</id>
-    <published>2015-10-22T07:47:17.000Z</published>
-    <updated>2017-03-11T11:36:05.401Z</updated>
-    
-    <content type="html"><![CDATA[<p>Python是一种简单易学，功能强大的编程语言，它有高效率的高层数据结构，能简单而有效地实现面向对象编程。Python简洁的语法和对动态输入的支持，再加上解释性语言的本质，使得它在大多数平台上的很多领域都是一个理想的脚本语言，特别适用于快速的应用程序开发。<br><a id="more"></a></p>
-<h2 id="一、语句和语法"><a href="#一、语句和语法" class="headerlink" title="一、语句和语法"></a>一、语句和语法</h2><pre><code>python具有一些基本的规则和特殊字符，说明如下：
-#:用于注释内容
-\n:用于分隔符
-\:继续上一行
-如 if(A==1) and \
-        (B==2):
-                return    
-
-特殊情况为:&apos;&apos;&apos;(三引号下的内容可跨行) 2.给一些变量赋值
-
-;将两个语句连接在一行中  
-如:import sys;x=&apos;foo&apos; sys.stdout.write(x) 此方式不提倡
-
-:将代码块的头和体分开
-缩进相同的一组语句构成代码块，如if while def class等 以(:)结束 ，则该行后的一行或多行称为代码组
-代码块(语句):用缩进的方式体现
-py文件是以模块的方式组织
-每一个python脚本可以称为一个模块，以文件的方式存储。模块的中内容可以是可直接执行脚本，一些类库函数 或被导入的调用
-</code></pre><h2 id="二、变量"><a href="#二、变量" class="headerlink" title="二、变量"></a>二、变量</h2><pre><code>    (1)赋值操作(注意pyton赋值不是将一个值赋给另一个变量 而是将该对象的引用赋值给变量)   
-            如 aList=[1,2,3,&apos;abc&apos;,23.44] aStr=&apos;hello&apos;        
-    (2)增量操作
-            等号和一个算术操作符构成一个增量操作符 如x+=1  -= %= **= 
-            但python不支持类似x++ 或x--等自增或自减
-    (3)多重赋值
-       如x=y=z=1
-       另一种为将多个变量同时赋值.如 x,y,z=1,3,&apos;abc&apos;
-       交换两个变量的赋值可以通过多元赋值实现
-       如:x,y=1,2
-       x,y=y,x
-
-**标识符**
-标识符是有效字符串的集合 其中有一部分构成保留字 不能用于其他用途
-pyhon标识符规则:
- 1.第一个字符必须是字母或下划线
- 2.其他字符需是字母，下划线或数字组成
- 3.大小写敏感
-(2)关键字
-(3)内建
-(4)专用下划线标识符
-    python可以用下划线作为变量的前缀或后缀指定特殊变量符，说明如下
-    1._xxx 不要from module import * 导入
-    2._XXX_ 系统定义的名字
-    3._xxx 类中的私有变量 在模块或类外不可以使用
-</code></pre><h2 id="三、编程风格"><a href="#三、编程风格" class="headerlink" title="三、编程风格"></a>三、编程风格</h2><pre><code>    1.注释
-    2.文档
-     python 提供了一种机制，可以用_doc_特殊变量 动态获取文档内容 ，在类 模块或函数声明中第一个没有赋值的字符串可用属性obj._doc_来访问
-    3.缩进
-(2).模块的结构和布局
-    用模块组织python的代码 将其应用到每一个文件，如
-    1.起始行
-    2.模块文档
-        说明模块的功能和全局变量的含义。可以通过module._doc_访问
-    3.模块导入
-    4.变量定义
-        次变量定义为全局变量，在本模块的所有函数都可以使用，但通常使用局部变量代替全局变量
-    5.类定义 (类的文档变量是class._doc_)
-    6.函数定义(函数的文档变量是function._doc_)
-    7.主程序
-        无论是被导入的模块还是作为直接执行的脚本，此部分都会执行，是根据执行模式调用不同的函数
-        python可以用如下方式检测该模块是被导入的模块还是被直接执行
-        A.若模块是被导入，__name__的值为模块的名字
-        B.若模块是直接执行,__name__的值为__main__
-</code></pre><h2 id="四、内存管理"><a href="#四、内存管理" class="headerlink" title="四、内存管理"></a>四、内存管理</h2><pre><code>变量无须事先声明
-变量无须指定类型
-不需要关心内存回收
-del语句可直接释放资源
-</code></pre><h2 id="五、入门例子"><a href="#五、入门例子" class="headerlink" title="五、入门例子"></a>五、入门例子</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env <span class="keyword">python</span></div><div class="line"></div><div class="line"><span class="string">'makeTextFile.py -- create text file'</span></div><div class="line"></div><div class="line">import os</div><div class="line"></div><div class="line"># <span class="built_in">get</span> filename</div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    fname = raw_input(<span class="string">'Enter file name: '</span>)</div><div class="line">    <span class="keyword">if</span> os.path.<span class="built_in">exists</span>(fname):</div><div class="line">        <span class="keyword">print</span><span class="string">"*** ERROR: '%s' already exists"</span> % fname</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">break</span></div><div class="line"></div><div class="line"># <span class="built_in">get</span> <span class="keyword">file</span> content (text) lines</div><div class="line"><span class="keyword">all</span> = []</div><div class="line"><span class="keyword">print</span> <span class="string">"\nEnter lines ('.' by itself to quit).\n"</span></div><div class="line"></div><div class="line"># loop until user terminates <span class="built_in">input</span></div><div class="line"><span class="keyword">while</span> True:</div><div class="line">    entry = raw_input(<span class="string">'&gt; '</span>)</div><div class="line">    <span class="keyword">if</span> entry == <span class="string">'.'</span>:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">all</span>.<span class="keyword">append</span>(entry)</div><div class="line"></div><div class="line"># <span class="keyword">write</span> lines <span class="keyword">to</span> <span class="keyword">file</span> with NEWLINE <span class="built_in">line</span> terminator</div><div class="line">fobj = <span class="keyword">open</span>(fname, <span class="string">'w'</span>)</div><div class="line">fobj.<span class="keyword">write</span>(<span class="string">'\n'</span>.<span class="keyword">join</span>(<span class="keyword">all</span>))</div><div class="line">fobj.<span class="keyword">close</span>()</div><div class="line"><span class="keyword">print</span> <span class="string">'DONE!'</span></div></pre></td></tr></table></figure>
-<h2 id="六、相关的模块和开发工具"><a href="#六、相关的模块和开发工具" class="headerlink" title="六、相关的模块和开发工具"></a>六、相关的模块和开发工具</h2><p>调试器:pdb<br>记录器:logging<br>性能测试器:profile hotshot </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Python是一种简单易学，功能强大的编程语言，它有高效率的高层数据结构，能简单而有效地实现面向对象编程。Python简洁的语法和对动态输入的支持，再加上解释性语言的本质，使得它在大多数平台上的很多领域都是一个理想的脚本语言，特别适用于快速的应用程序开发。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="python开发" scheme="http://blog.greekw.com/categories/python%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="python" scheme="http://blog.greekw.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>核心java系列——线程（二）</title>
     <link href="http://blog.greekw.com/2015/10/21/%E6%A0%B8%E5%BF%83java%E7%B3%BB%E5%88%97%E2%80%94%E2%80%94%E7%BA%BF%E7%A8%8B%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
     <id>http://blog.greekw.com/2015/10/21/核心java系列——线程（二）/</id>
@@ -846,43 +1376,6 @@ del语句可直接释放资源
       <category term="java" scheme="http://blog.greekw.com/tags/java/"/>
     
       <category term="多线程" scheme="http://blog.greekw.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>android之activity分析</title>
-    <link href="http://blog.greekw.com/2015/10/20/android%E4%B9%8Bactivity%E5%88%86%E6%9E%90/"/>
-    <id>http://blog.greekw.com/2015/10/20/android之activity分析/</id>
-    <published>2015-10-20T07:47:17.000Z</published>
-    <updated>2017-03-11T11:36:05.401Z</updated>
-    
-    <content type="html"><![CDATA[<p>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity)<br><a id="more"></a></p>
-<h2 id="一、什么是Activity"><a href="#一、什么是Activity" class="headerlink" title="一、什么是Activity"></a>一、什么是Activity</h2><p>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity).<br>配置如下<br>``</p>
-<p><activity android:label="@string/app_name" android:name=".MainActivity"><br>      <intent-filter><br>          <action android:name="android.intent.action.MAIN"><br>          <category android:name="android.intent.category.LAUNCHER"><br>      </category></action></intent-filter><br> </activity><br>```</p>
-<p>应用第一次运行时就会看到此Activity，并可以通过此Activity去启动其他的Activity.每当新的Activity启动时，当前的Activity就会停止，新的Activity就会压入到<br>stack(先进后出)中，并获得用户焦点，当回退时，当前的Activity就回销毁，上一个Activity就会恢复</p>
-<h2 id="二、activivty的什么周期"><a href="#二、activivty的什么周期" class="headerlink" title="二、activivty的什么周期"></a>二、activivty的什么周期</h2><p>流程图如下:<br>    <img src="http://img.blog.csdn.net/20151012162332940" alt="这里写图片描述"><br>涉及都的方法有onCreate()  onStart() onResume() onPause() onStop() onRestart() onDestory<br>Activity启动过程 onCreate()——&gt;onStart()——&gt;onResume()  退出Activity过程 onPause()——&gt;onStop()——&gt;onDestory()<br>按下home键回到主界面时执行过程:onPause()——&gt;onStop(),再次打开运行过程:onRestart()——&gt;onStart()——&gt;onResume()<br>以下是各个方法的说明:<br>onCreate()：当 activity 第一次创建时会被调用。在这个方法中你需要完成所有的正常静态设置 ，比如创建一个视图（ view ）、绑定列表的数据等等。<br>如果能捕获到 activity 状态的话，这个方法传递进来的 Bundle 对象将存放了 activity 当前的状态。调用该方法后一般会调用 onStart() 方法。</p>
-<p>onRestart()：在 activity 被停止后重新启动时会调用该方法。其后续会调用 onStart 方法。</p>
-<p>onStart()当 activity 对于用户可见前即调用这个方法。如果 activity回到前台则接着调用 onResume() ，如果 activity 隐藏则调用onStop()</p>
-<p>onResume()：在 activity 开始与用户交互前调用该方法。在这时该activity 处于 activity 栈的顶部，并且接受用户的输入。其后续会调用 onPause() 方法。</p>
-<p>onPause()：在系统准备开始恢复其它 activity 时会调用该方法。这个方法中通常用来提交一些还没保存的更改到持久数据 中，停止一些动画或其它一些耗 CPU 的操作等等。<br>无论在该方法里面进行任何操作，都需要较快速完成，因为如果它不返回的话，下一个 activity 将无法恢复出来。如果 activity 返回到前台将会调用 onResume() ，如果 activity 变得对用户不可见了将会调用onStop() 。</p>
-<p>onStop()：在 activity 对用户不可见时将调用该方法。可能会因为当前 activity 正在被销毁，或另一个 activity （已经存在的activity 或新的 activity ）已经恢复了正准备覆盖它，而调用该方法。<br>如果 activity 正准备返回与用户交互时后续会调用onRestart ，如果 activity 正在被释放则会调用 onDestroy 。</p>
-<p>onDestroy()：在 activity 被销毁前会调用该方法。这是 activity 能接收到的最后一个调用。可能会因为有人调用了 finish 方法使得当前activity 正在关闭，<br>系统为了保护内存临时释放这个 activity的实例，而调用该方法。你可以用 isFinishing 方法来区分这两种不同的情况。</p>
-<h2 id="三、如何启动一个新的Activity"><a href="#三、如何启动一个新的Activity" class="headerlink" title="三、如何启动一个新的Activity"></a>三、如何启动一个新的Activity</h2><p>1.启动一个新的Activity，可以通过Context的startActivity()方法<br> 如Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>   startActivity(intent)<br>2.若启动一个新的Activity，并需要传递数据到此Activity<br>    Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>    Bundle bundle=new Bundle();<br>    bundle.putString(“name”,”张三”)<br>    intent.putExtra(bundle)<br>    startActivity(intent)<br>3.若启动新的带返回值的Activity,并将返回值传给启动它的Activity<br>实现如下<br>Intent intent=new Intent(ActvityDemo.this,TestActivity.class)<br>startActivityForResults(intent,0x1000)<br>在ActvityDemo中需要获取到TestActivity的返回值，则TestActivity需要实现如下<br>Intent intent =new Intent();<br>intent.putExtra(“backkey”,”test”);<br>setResult(0x1001, intent);<br>那么backkey值在哪里获取呢？必须重写onActivityResult方法，通过判断requestCode<br>if(backCode==0x1001){<br>String str = data.getStringExtra(“backkey”);<br>    Log.i(TAG, “返回的值为：”+str);<br>    }</p>
-<h2 id="四、保持Activity的运行状态"><a href="#四、保持Activity的运行状态" class="headerlink" title="四、保持Activity的运行状态"></a>四、保持Activity的运行状态</h2><h2 id="五、完成退出Activity"><a href="#五、完成退出Activity" class="headerlink" title="五、完成退出Activity"></a>五、完成退出Activity</h2><p>当进行back时，Activity回调用onDestory()方法，但进程没有被杀死，甚至调用finish()方法，进程还在。则需要完成退出，实现如下:<br>Intent intent=new Intent();<br>intent.setClass(context,MainActivity.class);<br>intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_UP);<br>intent.putExtra(“flag”,EXIT_APPLICATION);<br>context.startActivity(intent);</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity)&lt;br&gt;
-    
-    </summary>
-    
-      <category term="移动开发" scheme="http://blog.greekw.com/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
-    
-    
-      <category term="Android" scheme="http://blog.greekw.com/tags/Android/"/>
-    
-      <category term="activity" scheme="http://blog.greekw.com/tags/activity/"/>
     
   </entry>
   
@@ -973,6 +1466,43 @@ del语句可直接释放资源
   </entry>
   
   <entry>
+    <title>android之activity分析</title>
+    <link href="http://blog.greekw.com/2015/10/20/android%E4%B9%8Bactivity%E5%88%86%E6%9E%90/"/>
+    <id>http://blog.greekw.com/2015/10/20/android之activity分析/</id>
+    <published>2015-10-20T07:47:17.000Z</published>
+    <updated>2017-03-11T11:36:05.401Z</updated>
+    
+    <content type="html"><![CDATA[<p>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity)<br><a id="more"></a></p>
+<h2 id="一、什么是Activity"><a href="#一、什么是Activity" class="headerlink" title="一、什么是Activity"></a>一、什么是Activity</h2><p>activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity).<br>配置如下<br>``</p>
+<p><activity android:label="@string/app_name" android:name=".MainActivity"><br>      <intent-filter><br>          <action android:name="android.intent.action.MAIN"><br>          <category android:name="android.intent.category.LAUNCHER"><br>      </category></action></intent-filter><br> </activity><br>```</p>
+<p>应用第一次运行时就会看到此Activity，并可以通过此Activity去启动其他的Activity.每当新的Activity启动时，当前的Activity就会停止，新的Activity就会压入到<br>stack(先进后出)中，并获得用户焦点，当回退时，当前的Activity就回销毁，上一个Activity就会恢复</p>
+<h2 id="二、activivty的什么周期"><a href="#二、activivty的什么周期" class="headerlink" title="二、activivty的什么周期"></a>二、activivty的什么周期</h2><p>流程图如下:<br>    <img src="http://img.blog.csdn.net/20151012162332940" alt="这里写图片描述"><br>涉及都的方法有onCreate()  onStart() onResume() onPause() onStop() onRestart() onDestory<br>Activity启动过程 onCreate()——&gt;onStart()——&gt;onResume()  退出Activity过程 onPause()——&gt;onStop()——&gt;onDestory()<br>按下home键回到主界面时执行过程:onPause()——&gt;onStop(),再次打开运行过程:onRestart()——&gt;onStart()——&gt;onResume()<br>以下是各个方法的说明:<br>onCreate()：当 activity 第一次创建时会被调用。在这个方法中你需要完成所有的正常静态设置 ，比如创建一个视图（ view ）、绑定列表的数据等等。<br>如果能捕获到 activity 状态的话，这个方法传递进来的 Bundle 对象将存放了 activity 当前的状态。调用该方法后一般会调用 onStart() 方法。</p>
+<p>onRestart()：在 activity 被停止后重新启动时会调用该方法。其后续会调用 onStart 方法。</p>
+<p>onStart()当 activity 对于用户可见前即调用这个方法。如果 activity回到前台则接着调用 onResume() ，如果 activity 隐藏则调用onStop()</p>
+<p>onResume()：在 activity 开始与用户交互前调用该方法。在这时该activity 处于 activity 栈的顶部，并且接受用户的输入。其后续会调用 onPause() 方法。</p>
+<p>onPause()：在系统准备开始恢复其它 activity 时会调用该方法。这个方法中通常用来提交一些还没保存的更改到持久数据 中，停止一些动画或其它一些耗 CPU 的操作等等。<br>无论在该方法里面进行任何操作，都需要较快速完成，因为如果它不返回的话，下一个 activity 将无法恢复出来。如果 activity 返回到前台将会调用 onResume() ，如果 activity 变得对用户不可见了将会调用onStop() 。</p>
+<p>onStop()：在 activity 对用户不可见时将调用该方法。可能会因为当前 activity 正在被销毁，或另一个 activity （已经存在的activity 或新的 activity ）已经恢复了正准备覆盖它，而调用该方法。<br>如果 activity 正准备返回与用户交互时后续会调用onRestart ，如果 activity 正在被释放则会调用 onDestroy 。</p>
+<p>onDestroy()：在 activity 被销毁前会调用该方法。这是 activity 能接收到的最后一个调用。可能会因为有人调用了 finish 方法使得当前activity 正在关闭，<br>系统为了保护内存临时释放这个 activity的实例，而调用该方法。你可以用 isFinishing 方法来区分这两种不同的情况。</p>
+<h2 id="三、如何启动一个新的Activity"><a href="#三、如何启动一个新的Activity" class="headerlink" title="三、如何启动一个新的Activity"></a>三、如何启动一个新的Activity</h2><p>1.启动一个新的Activity，可以通过Context的startActivity()方法<br> 如Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>   startActivity(intent)<br>2.若启动一个新的Activity，并需要传递数据到此Activity<br>    Intent intent=new Intent(this,TestActivity.class)(其中TestActivity是需要被启动的Activity)<br>    Bundle bundle=new Bundle();<br>    bundle.putString(“name”,”张三”)<br>    intent.putExtra(bundle)<br>    startActivity(intent)<br>3.若启动新的带返回值的Activity,并将返回值传给启动它的Activity<br>实现如下<br>Intent intent=new Intent(ActvityDemo.this,TestActivity.class)<br>startActivityForResults(intent,0x1000)<br>在ActvityDemo中需要获取到TestActivity的返回值，则TestActivity需要实现如下<br>Intent intent =new Intent();<br>intent.putExtra(“backkey”,”test”);<br>setResult(0x1001, intent);<br>那么backkey值在哪里获取呢？必须重写onActivityResult方法，通过判断requestCode<br>if(backCode==0x1001){<br>String str = data.getStringExtra(“backkey”);<br>    Log.i(TAG, “返回的值为：”+str);<br>    }</p>
+<h2 id="四、保持Activity的运行状态"><a href="#四、保持Activity的运行状态" class="headerlink" title="四、保持Activity的运行状态"></a>四、保持Activity的运行状态</h2><h2 id="五、完成退出Activity"><a href="#五、完成退出Activity" class="headerlink" title="五、完成退出Activity"></a>五、完成退出Activity</h2><p>当进行back时，Activity回调用onDestory()方法，但进程没有被杀死，甚至调用finish()方法，进程还在。则需要完成退出，实现如下:<br>Intent intent=new Intent();<br>intent.setClass(context,MainActivity.class);<br>intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_UP);<br>intent.putExtra(“flag”,EXIT_APPLICATION);<br>context.startActivity(intent);</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;activity是手机应用程序窗口的交互界面，一个应用程序通常会包含多个activity,都会在Mainfest.xml中指定一个入口(主的acitivity)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="移动开发" scheme="http://blog.greekw.com/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Android" scheme="http://blog.greekw.com/tags/Android/"/>
+    
+      <category term="activity" scheme="http://blog.greekw.com/tags/activity/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android之Activity分析</title>
     <link href="http://blog.greekw.com/2015/10/12/Android%E4%B9%8BActivity/"/>
     <id>http://blog.greekw.com/2015/10/12/Android之Activity/</id>
@@ -1008,42 +1538,6 @@ del语句可直接释放资源
       <category term="android" scheme="http://blog.greekw.com/tags/android/"/>
     
       <category term="Activity" scheme="http://blog.greekw.com/tags/Activity/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>核心java系列——反射</title>
-    <link href="http://blog.greekw.com/2015/10/02/%E6%A0%B8%E5%BF%83java%E7%B3%BB%E7%BB%9F%E2%80%94%E2%80%94%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/"/>
-    <id>http://blog.greekw.com/2015/10/02/核心java系统——反射机制/</id>
-    <published>2015-10-02T11:47:50.000Z</published>
-    <updated>2017-03-11T11:36:05.432Z</updated>
-    
-    <content type="html"><![CDATA[<p>反射是java中一种很强大的工具，能够动态分析java的类的能力。在运行状态中，对于任意一个类，通过反射都能知道这个类的属性和方法。<br>这种动态获取的信息以及动态调用对象的方法的功能称为Java语言的反射机制。反射的概念是由Smith在1982年首次提出的。<br><a id="more"></a></p>
-<h2 id="一，反射的简介"><a href="#一，反射的简介" class="headerlink" title="一，反射的简介"></a>一，反射的简介</h2><p>反射是java中一种很强大的工具，能够动态分析java的类的能力。在运行状态中，对于任意一个类，通过反射都能知道这个类的属性和方法。<br>这种动态获取的信息以及动态调用对象的方法的功能称为Java语言的反射机制。反射的概念是由Smith在1982年首次提出的。</p>
-<h2 id="二、反射的作用"><a href="#二、反射的作用" class="headerlink" title="二、反射的作用"></a>二、反射的作用</h2><p>java的发射机制提供如下几个方面的作用:<br>1.在运行时判断任意一个对象所属的类。<br>2.在运行时构造任意一个类的对象。<br>3.在运行时构造任意一个类所有的成员变量和方法。<br>4.在运行时动态创建对象，从一个对象是属性拷贝到另一个对象相应的属性上。<br>5.创建动态代理。</p>
-<h2 id="三、反射中常用的API"><a href="#三、反射中常用的API" class="headerlink" title="三、反射中常用的API"></a>三、反射中常用的API</h2><p>java.lang.Class;<br>java.lang.reflect.Constructor;<br>java.lang.reflect.Field;<br>java.lang.reflect.Method;<br>java.lang.reflect.Modifier;</p>
-<h2 id="四、反射机制API的使用"><a href="#四、反射机制API的使用" class="headerlink" title="四、反射机制API的使用"></a>四、反射机制API的使用</h2><p><strong>1.class类对象</strong><br>class类对象是反射机制的根源，由JVM生成（由于class类没有public方法，无法直接new 一个class对象），可以通过Object.getClass()获得class类型的对象<br>下面介绍如何获取Class对象:<br>A.通过getClass()方法获取，如String s=”agagad”;Class c=s.getClass();<br>B通过Class.forName()获取（基本数据类型除外）。如Class c=Class.forName(“java.lang.String”);<br>C.通过.class 如Class c=Person.class;Class c1=String.class等<br>D.newInstance创建一个类对象</p>
-<p><strong>2.Field的作用</strong><br>Field可以描述一个类的成员变量，且可以通过getDeclareFields()获取类的所有成员变量。<br> Class c = Class.forName(“java.lang.Integer”);<br> //获取所有的成员变量<br>Field[] fs = c.getDeclaredFields();<br>通过setAccessible()设置成员变量值可访问的<br>实例如下:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="type">Class</span> <span class="built_in">c</span>=<span class="type">Class</span>.forName(<span class="string">"com.greekw.pojo.User"</span>);</div><div class="line"><span class="type">System</span>.out.<span class="built_in">println</span>(<span class="string">"User类的全路径类名"</span>+<span class="built_in">c</span>.getName());</div><div class="line"><span class="type">System</span>.out.<span class="built_in">println</span>(<span class="string">"User类的类名"</span>+<span class="built_in">c</span>.getSimpleName());</div><div class="line"><span class="type">User</span> user=new <span class="type">User</span>();</div><div class="line"><span class="comment">//获取类中所有的属性</span></div><div class="line"><span class="type">Field</span>[] fields=<span class="built_in">c</span>.getDeclaredFields();</div><div class="line"><span class="keyword">for</span>(<span class="type">Field</span> f:fields)&#123;</div><div class="line">	<span class="comment">//获取变量的修饰符</span></div><div class="line">	<span class="type">System</span>.out.<span class="built_in">println</span>(<span class="type">Modifier</span>.<span class="built_in">toString</span>(f.getModifiers())+<span class="string">" "</span>);</div><div class="line">	<span class="comment">//获取变量的类型</span></div><div class="line">	<span class="type">System</span>.out.<span class="built_in">println</span>(f.getType().getSimpleName());</div><div class="line">	<span class="comment">//获取变量名</span></div><div class="line">	<span class="type">System</span>.out.<span class="built_in">println</span>(f.getName());</div><div class="line">	<span class="comment">//获取成员变量的值</span></div><div class="line">	<span class="type">String</span> fName=f.getName();</div><div class="line">	f.setAccessible(<span class="literal">true</span>);</div><div class="line">	<span class="type">System</span>.out.<span class="built_in">println</span>(fName+<span class="string">"的值为:"</span>+f.<span class="keyword">get</span>(user));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p><strong>3.Method类</strong><br>Method类可描述类的所有方法，可以通过getDeclaredMethods()获取所有方法<br>实例如下:</p>
-<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//获取一个类的所有方法</span></div><div class="line"><span class="keyword">Class</span> c<span class="class">=<span class="keyword">Class</span>.forName("com.greekw.pojo.User");</span></div><div class="line"><span class="function"><span class="keyword">Method</span>[] <span class="title">methods</span>=<span class="title">c</span>.<span class="title">getDeclaredMethods</span><span class="params">()</span>;</span></div><div class="line"><span class="keyword">for</span>(<span class="function"><span class="keyword">Method</span> <span class="title">m</span>:</span>methods)<span class="comment">&#123;</span></div><div class="line">	//获取方法修饰符</div><div class="line">	System.out.println(Modifier.toString(m.getModifiers())+" ");</div><div class="line">	//获取方法类型</div><div class="line">	System.out.println(m.getReturnType().getName()+" ");</div><div class="line">	//获取方法名</div><div class="line">	System.out.println(m.getName()+" ");</div><div class="line">	//获取方法的参数</div><div class="line">	Class[] params=m.getParameterTypes();</div><div class="line">	for(int i=0;i&lt;params.length;i++)&#123;</div><div class="line">		Class pc=params[i];</div><div class="line">		System.out.println(pc.getSimpleName()+",");</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>调用对象的方法,实现如下:<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//调用对象的方法</span></div><div class="line">m.setAccessible(<span class="literal">true</span>);<span class="comment">//设置对象的属性和方法是可访问的</span></div><div class="line"><span class="keyword">if</span>(m.getName().<span class="keyword">equals</span>(<span class="string">"setIntValue"</span>))&#123;</div><div class="line">	m.invoke(user, <span class="number">50000</span>);<span class="comment">//修改属性的值</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span>(m.getName().<span class="keyword">equals</span>(<span class="string">"setName"</span>))&#123;</div><div class="line">	m.invoke(user, <span class="string">"测试"</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><strong>4.关于instanceof</strong><br>instanceof，用来判断某个对象是否是某种类型，计算结果是一个boolean类型的值<br>如果一个对象继承了某个类，或实现了某些接口，那么这个对象都是属于哪些类型的<br>实例如下:<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">LittleDog ld=<span class="keyword">new</span> LittleDog();</div><div class="line"><span class="keyword">if</span>(ld <span class="keyword">instanceof</span> LittleDog)&#123;</div><div class="line">	System.out.<span class="keyword">println</span>(ld的对象类型是LittleDog);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>总之，java的反射机制是代码更加灵活，更容易体现面向对象的思想，在设计模式，配置文件读取，以及三大框架中都有用到，是一种构建工具类的利器。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;反射是java中一种很强大的工具，能够动态分析java的类的能力。在运行状态中，对于任意一个类，通过反射都能知道这个类的属性和方法。&lt;br&gt;这种动态获取的信息以及动态调用对象的方法的功能称为Java语言的反射机制。反射的概念是由Smith在1982年首次提出的。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="核心java" scheme="http://blog.greekw.com/categories/%E6%A0%B8%E5%BF%83java/"/>
-    
-    
-      <category term="java" scheme="http://blog.greekw.com/tags/java/"/>
-    
-      <category term="反射" scheme="http://blog.greekw.com/tags/%E5%8F%8D%E5%B0%84/"/>
     
   </entry>
   
